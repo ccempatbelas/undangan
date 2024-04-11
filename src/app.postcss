@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+/* Fonts */
+@font-face {
+  font-family: 'Glester';
+  src: url('/fonts/Glester.woff');
+}
+
+@font-face {
+  font-family: 'Alice';
+  src: url('/fonts/Alice.woff2');
+}
+
+.gradient-heading {
+  @apply box-decoration-clone bg-clip-text text-transparent;
+  /* Direction */
+  @apply bg-gradient-to-br;
+}
+
+/* Background */
+.bg-nebula {
+  /* CSS Mesh Gradient via https://csshero.org/mesher/ */
+  background-size: cover;
+  /* prettier-ignore */
+  background-image:
+	  radial-gradient(at 88% 12%, hsla(372,50%,81%,0.12) 0px, transparent 30%),
+    radial-gradient(at 5% 100%, hsla(45,30%,50%,0.03) 0px, transparent 95%),
+    radial-gradient(at 50% 100%, hsla(45,30%,50%,0.03) 0px, transparent 95%),
+    radial-gradient(at 95% 100%, hsla(45,30%,50%,0.03) 0px, transparent 95%),
+    radial-gradient(at 12% 22%, hsla(204,90%,38%,0.12) 0px, transparent 50%);
+}
+
+/* Animation */
+.animFloat {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, -15px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+
+.animShow {
+  animation: showing 2s ease-in-out;
+}
+
+@keyframes showing {
+  0% {
+    transform: scale(2);
+    opacity: 0.1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animClick {
+  transform-origin: bottom right; /* Set the rotation origin to the bottom right corner */
+  animation: animClick 2s ease-in-out infinite;
+}
+
+@keyframes animClick {
+  0% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
+.animScale {
+  animation: animScale 2s ease-in-out infinite;
+}
+@keyframes animScale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1);
+  }
+  55% {
+    transform: scale(0.95);
+  }
+  60% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animRight {
+  animation: animRight 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes animRight {
+  0% {
+    opacity: 0.1;
+    transform: translate(100px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.animLeft {
+  animation: animLeft 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes animLeft {
+  0% {
+    opacity: 0.1;
+    transform: translate(-100px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.animBot {
+  animation: animBot 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes animBot {
+  0% {
+    opacity: 0.1;
+    transform: translate(0, 100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.animTop {
+  animation: animTop 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes animTop {
+  0% {
+    opacity: 0.1;
+    transform: translate(0, -100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.animFade {
+  animation: animFade 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+@keyframes animFade {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
