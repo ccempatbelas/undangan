@@ -43,7 +43,7 @@
   </div>
 </Drawer>
 
-{#if pass == 'gibpei'}
+{#if pass == 'masuk'}
   <script lang="ts">
     localStorage.setItem('pass', 'gibpei');
   </script>
