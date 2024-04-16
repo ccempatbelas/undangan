@@ -33,7 +33,7 @@
       }
     }}
   >
-    <h2 class="h2 card-header mb-7 text-center">N & M Wedding</h2>
+    <h2 class="h2 card-header mb-7 text-center">CC 2014 - 10 TAHUN!!!</h2>
     <div class="flex gap-4">
       <label class="label">
         <div class="flex items-baseline">
