@@ -33,29 +33,9 @@
       }
     }}
   >
-    <h2 class="h2 card-header mb-7 text-center">CC 2014 - 10 TAHUN!!!</h2>
-    <div class="flex gap-4">
-      <label class="label">
-        <div class="flex items-baseline">
-          <span class="mr-2">Enter Invitation Code</span>
-          <button type="button" class="[&>*]:pointer-events-none" use:popup={popupHover}>
-            <HelpCircle class="card-hover" size={15} strokeWidth={1} />
-          </button>
-          <div class="card variant-glass px-4 py-2" data-popup="popupHover">
-            <p>Get the code from your inviter</p>
-            <div class="variant-glass arrow" />
-          </div>
-        </div>
-        <input class="input variant-glass" type="text" placeholder="Code" bind:value={code} />
-      </label>
-      <button type="submit" class="variant-filled btn" disabled={clicked}>
-        {#if clicked}
-          <Loader2 class="animate-spin" />
-        {:else}
-          Enter
-        {/if}
-      </button>
-    </div>
+    <h2 class="h2 mb-7 text-center">CC 2014 - 10 TAHUN!!!</h2>
+    <h1 class="h1 card-header mb-7 text-center">27 Juli 2024 - Jakarta</h1>
+    <h3 class="h3 mb-7 text-center">more info coming soon</h3>
   </form>
 </Center>
 
