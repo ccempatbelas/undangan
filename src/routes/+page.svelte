@@ -95,10 +95,10 @@
 </script>
 
     <svelte:head>
-      <title>N&M Wedding</title>
+      <title>CC14 10 tahun</title>
       <meta name="the description" content="Svelte demo app" />
-      <link rel="preload" href="/images/veil_top.png" as="image" />
-      <link rel="preload" href="/images/veil_bot.png" as="image" />
+      <link rel="preload" href="/images/tablogo.png" as="image" />
+      <link rel="preload" href="/images/tablogo.png" as="image" />
     </svelte:head>
 
 <svelte:window
@@ -123,7 +123,7 @@
           <div
             class="animShow gradient-heading flex flex-col items-center gap-8 from-primary-400 via-primary-200 to-primary-100 pt-4 md:mb-[32rem]"
           >
-            <h1 class="h1 shadow-primary-300 text-shadow">CC 2014 10 Tahun!!!</h1>
+            <h1 class="h1 shadow-primary-300 text-shadow">CC14 10 Tahun!!!</h1>
             <h2 class="h4">Ketemuan yuuuu</h2>
           </div>
       </header>
@@ -211,7 +211,7 @@
         </div>
       </Section>
 
-      <Section id="rsvp" title="Nanti absen ya">
+      <Section id="rsvp" title="Nanti absen disini">
         <div
           class="mb-64 mt-8 flex justify-center object-none object-bottom opacity-0"
           use:inview={{ unobserveOnEnter: true }}
@@ -232,5 +232,10 @@
           </div>
         </div>
       </Section>
+      <p
+        class="mb-20 text-center text-sm text-primary-200 [&>*]:pointer-events-none"
+      >
+      still building more exciting stuff here
+      </p>
     </div>
   </div>
