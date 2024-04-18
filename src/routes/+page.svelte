@@ -97,8 +97,6 @@
     <svelte:head>
       <title>CC14 10 tahun</title>
       <meta name="the description" content="Svelte demo app" />
-      <link rel="preload" href="/images/tablogo.png" as="image" />
-      <link rel="preload" href="/images/tablogo.png" as="image" />
     </svelte:head>
 
 <svelte:window
