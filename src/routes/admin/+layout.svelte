@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { X, Activity, ListTodo, TableProperties, LayoutDashboard, Gift } from 'lucide-svelte';
+  import { X, Activity, ListTodo, TableProperties } from 'lucide-svelte';
   import { Drawer, getDrawerStore, TabGroup, TabAnchor } from '@skeletonlabs/skeleton';
   import Center from '@/lib/components/layouts/Center.svelte';
   import { page } from '$app/stores';
@@ -59,18 +59,6 @@
         <div class="flex w-36 items-center justify-center">
           <ListTodo />
           <span class="ml-4">Todo</span>
-        </div>
-      </TabAnchor>
-      <TabAnchor href="/admin/table" selected={$page.url.pathname === '/admin/table'}>
-        <div class="flex w-36 items-center justify-center">
-          <LayoutDashboard />
-          <span class="ml-4">Table Layout</span>
-        </div>
-      </TabAnchor>
-      <TabAnchor href="/admin/registry" selected={$page.url.pathname === '/admin/registry'}>
-        <div class="flex w-36 items-center justify-center">
-          <Gift />
-          <span class="ml-4">Gift Registry</span>
         </div>
       </TabAnchor>
       <TabAnchor href="/admin/activity" selected={$page.url.pathname === '/admin/activity'}>
