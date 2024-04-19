@@ -94,10 +94,10 @@
   };
 </script>
 
-    <svelte:head>
-      <title>CC14 10 tahun</title>
-      <meta name="the description" content="Svelte demo app" />
-    </svelte:head>
+<svelte:head>
+  <title>CC14 10 tahun</title>
+  <meta name="the description" content="Svelte demo app" />
+</svelte:head>
 
 <svelte:window
   on:scroll={() => {
@@ -111,129 +111,119 @@
 
 <!-- For Eager loading -->
 <img src={img} alt="invisible" hidden />
-  <div class="bg-nebula relative flex justify-center overflow-hidden">
-    <div class="max-w-5xl">
-      <header
-        id="head"
-        class="flex justify-center"
-        transition:fade={{ duration: 3000 }}
+<div class="bg-nebula relative flex justify-center overflow-hidden">
+  <div class="max-w-5xl">
+    <header id="head" class="flex justify-center" transition:fade={{ duration: 3000 }}>
+      <div
+        class="animShow gradient-heading flex flex-col items-center gap-8 from-primary-400 via-primary-200 to-primary-100 pt-4"
       >
-          <div
-            class="animShow gradient-heading flex flex-col items-center gap-8 from-primary-400 via-primary-200 to-primary-100 pt-4 "
-          >
-            <h1 class="h1 text-primary-500">CC14 10 Tahun!!!</h1>
-            <h2 class="h4 text-secondary-500">Ketemuan yuuuu</h2>
-          </div>
-      </header>
+        <h1 class="h1 text-primary-500">CC14 10 Tahun!!!</h1>
+        <h2 class="h4 text-secondary-500">Ketemuan yuuuu</h2>
+      </div>
+    </header>
 
-      <Section id="gallery" title="" class="mb-12">
-        <div class="mb-10 mt-10 flex justify-center object-none object-bottom">
-          <div class="variant-glass flex items-center justify-center">
-            <img
-              class="aspect-square max-h-full w-full max-w-xl rounded-md object-cover"
-              src="/images/0.jpg"
-              alt="meet gif"
-            />
-          </div>
+    <Section id="gallery" title="" class="mb-12">
+      <div class="mb-10 mt-10 flex justify-center object-none object-bottom">
+        <div class="variant-glass flex items-center justify-center">
+          <img
+            class="aspect-square max-h-full w-full max-w-xl rounded-md object-cover"
+            src="/images/0.jpg"
+            alt="meet gif"
+          />
         </div>
+      </div>
 
-        <div class="grid grid-cols-[auto_1fr_auto] items-center">
-          <!-- Button: Left -->
-          <button
-            type="button"
-            class="variant-filled btn-icon max-sm:hidden"
-            on:click={multiColumnLeft}
-          >
-            <ArrowLeft />
-          </button>
-          <!-- Carousel -->
-          <div
-            bind:this={elemGallery}
-            class="flex snap-x snap-mandatory gap-2 overflow-x-auto scroll-smooth pb-2"
-          >
-            {#each imagePaths as path, i}
-              <button class="w-[42%] shrink-0 snap-start md:w-[28%]" on:click={() => openImage(i)}>
-                <div class="variant-glass">
-                  <img
-                    class="aspect-square max-h-full w-full rounded-md object-cover hover:scale-105"
-                    src={path}
-                    loading="lazy"
-                    alt="image {imagePaths}"
-                  />
-                </div>
-              </button>
-            {/each}
-          </div>
-          <!-- Button-Right -->
-          <button
-            type="button"
-            class="variant-filled btn-icon max-sm:hidden"
-            on:click={multiColumnRight}
-          >
-            <ArrowRight />
-          </button>
-        </div>
-      </Section>
-
-      <Section id="schedule" title="Makan Malam Santai">
-        <h1 class="h1 mb-4 mt-12">Sabtu, 27 Juli 2024</h1>
-        <div
-          class="flex justify-center opacity-0"
-          use:inview={animOptions}
-          class:animRight={inviewFlag.holyMat}
-          on:inview_change={({ detail }) => (inviewFlag.holyMat = detail.inView)}
+      <div class="grid grid-cols-[auto_1fr_auto] items-center">
+        <!-- Button: Left -->
+        <button
+          type="button"
+          class="variant-filled btn-icon max-sm:hidden"
+          on:click={multiColumnLeft}
         >
-          <div class="relative  mr-4 basis-3/5 text-right xs:basis-1/2">
-            <p>
-              <span class="h2 text-primary-200"></span>
-            </p>
-            <h3 class="h3 mt-4">Jam dan tempat</h3>
-            <p>akan diinformasikan segera!</p>
-
-          </div>
-        </div>
+          <ArrowLeft />
+        </button>
+        <!-- Carousel -->
         <div
-          class="flex justify-center opacity-0"
-          use:inview={animOptions}
-          class:animLeft={inviewFlag.holyMat}
-          on:inview_change={({ detail }) => (inviewFlag.holyMat = detail.inView)}
+          bind:this={elemGallery}
+          class="flex snap-x snap-mandatory gap-2 overflow-x-auto scroll-smooth pb-2"
         >
-          <div class="relative mr-4 basis-3/5 text-left xs:basis-1/2">
-            <p>
-              <span class="h2 text-primary-200"></span>
-            </p>
-            <h3 class="h3 mt-4">Simpan tanggal dulu</h3>
-            <p>don't miss it</p>
-
-          </div>
-        </div>
-      </Section>
-
-      <Section id="rsvp" title="Nanti absen disini">
-        <div
-          class="mb-64 mt-8 flex justify-center object-none object-bottom opacity-0"
-          use:inview={{ unobserveOnEnter: true }}
-          class:animFade={inviewFlag.rsvp}
-          on:inview_change={({ detail }) => (inviewFlag.rsvp = detail.inView)}
-        >
-          <div class="flex max-h-full w-full max-w-lg flex-col justify-center gap-8">
-            <p class="text-center">
-              More information coming soon!
-            </p>
-              <div class="relative">
-                <div
-                  class="gradient-heading animScale rounded-lg border border-primary-200 from-primary-500 to-primary-50 px-8 py-4 text-3xl shadow-primary-300 text-shadow-sm md:text-5xl"
-                >
-                  RSVP belum buka
-                </div>
+          {#each imagePaths as path, i}
+            <button class="w-[42%] shrink-0 snap-start md:w-[28%]" on:click={() => openImage(i)}>
+              <div class="variant-glass">
+                <img
+                  class="aspect-square max-h-full w-full rounded-md object-cover hover:scale-105"
+                  src={path}
+                  loading="lazy"
+                  alt="image {imagePaths}"
+                />
               </div>
+            </button>
+          {/each}
+        </div>
+        <!-- Button-Right -->
+        <button
+          type="button"
+          class="variant-filled btn-icon max-sm:hidden"
+          on:click={multiColumnRight}
+        >
+          <ArrowRight />
+        </button>
+      </div>
+    </Section>
+
+    <Section id="schedule" title="Makan Malam Santai">
+      <h1 class="h1 mb-4 mt-12">Sabtu, 27 Juli 2024</h1>
+      <div
+        class="flex justify-center opacity-0"
+        use:inview={animOptions}
+        class:animRight={inviewFlag.holyMat}
+        on:inview_change={({ detail }) => (inviewFlag.holyMat = detail.inView)}
+      >
+        <div class="relative mr-4 basis-3/5 text-right xs:basis-1/2">
+          <p>
+            <span class="h2 text-primary-200"></span>
+          </p>
+          <h3 class="h3 mt-4">Jam dan tempat</h3>
+          <p>akan diinformasikan segera!</p>
+        </div>
+      </div>
+      <div
+        class="flex justify-center opacity-0"
+        use:inview={animOptions}
+        class:animLeft={inviewFlag.holyMat}
+        on:inview_change={({ detail }) => (inviewFlag.holyMat = detail.inView)}
+      >
+        <div class="relative mr-4 basis-3/5 text-left xs:basis-1/2">
+          <p>
+            <span class="h2 text-primary-200"></span>
+          </p>
+          <h3 class="h3 mt-4">Simpan tanggal dulu</h3>
+          <p>don't miss it</p>
+        </div>
+      </div>
+    </Section>
+
+    <Section id="rsvp" title="Nanti absen disini">
+      <div
+        class="mb-64 mt-8 flex justify-center object-none object-bottom opacity-0"
+        use:inview={{ unobserveOnEnter: true }}
+        class:animFade={inviewFlag.rsvp}
+        on:inview_change={({ detail }) => (inviewFlag.rsvp = detail.inView)}
+      >
+        <div class="flex max-h-full w-full max-w-lg flex-col justify-center gap-8">
+          <p class="text-center">More information coming soon!</p>
+          <div class="relative">
+            <div
+              class="gradient-heading animScale rounded-lg border border-primary-200 from-primary-500 to-primary-50 px-8 py-4 text-3xl shadow-primary-300 text-shadow-sm md:text-5xl"
+            >
+              RSVP belum buka
+            </div>
           </div>
         </div>
-      </Section>
-      <p
-        class="mb-20 text-center text-sm text-primary-200 [&>*]:pointer-events-none"
-      >
+      </div>
+    </Section>
+    <p class="mb-20 text-center text-sm text-primary-200 [&>*]:pointer-events-none">
       still building more exciting stuff here
-      </p>
-    </div>
+    </p>
   </div>
+</div>
