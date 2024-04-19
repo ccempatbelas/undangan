@@ -119,10 +119,10 @@
         transition:fade={{ duration: 3000 }}
       >
           <div
-            class="animShow gradient-heading flex flex-col items-center gap-8 from-primary-400 via-primary-200 to-primary-100 pt-4 md:mb-[32rem]"
+            class="animShow gradient-heading flex flex-col items-center gap-8 from-primary-400 via-primary-200 to-primary-100 pt-4 "
           >
-            <h1 class="h1 shadow-primary-300 text-shadow">CC14 10 Tahun!!!</h1>
-            <h2 class="h4">Ketemuan yuuuu</h2>
+            <h1 class="h1 text-primary-500">CC14 10 Tahun!!!</h1>
+            <h2 class="h4 text-secondary-500">Ketemuan yuuuu</h2>
           </div>
       </header>
 
