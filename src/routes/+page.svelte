@@ -173,34 +173,47 @@
 
     <Section id="schedule" title="Makan Malam Santai">
       <h1 class="h1 mb-4 mt-12">Sabtu, 27 Juli 2024</h1>
-      <div
-        class="flex justify-center opacity-0"
-        use:inview={animOptions}
-        class:animRight={inviewFlag.holyMat}
-        on:inview_change={({ detail }) => (inviewFlag.holyMat = detail.inView)}
-      >
-        <div class="relative mr-4 basis-3/5 text-right xs:basis-1/2">
-          <p>
-            <span class="h2 text-primary-200"></span>
-          </p>
-          <h3 class="h3 mt-4">Jam dan tempat</h3>
-          <p>akan diinformasikan segera!</p>
-        </div>
-      </div>
-      <div
-        class="flex justify-center opacity-0"
-        use:inview={animOptions}
-        class:animLeft={inviewFlag.holyMat}
-        on:inview_change={({ detail }) => (inviewFlag.holyMat = detail.inView)}
-      >
-        <div class="relative mr-4 basis-3/5 text-left xs:basis-1/2">
-          <p>
-            <span class="h2 text-primary-200"></span>
-          </p>
-          <h3 class="h3 mt-4">Simpan tanggal dulu</h3>
-          <p>don't miss it</p>
-        </div>
-      </div>
+        <div
+          class="flex opacity-0"
+          use:inview={animOptions}
+          class:animRight={inviewFlag.holyMat}
+          on:inview_change={({ detail }) => (inviewFlag.holyMat = detail.inView)}
+        >
+          <div class="relative mr-4 basis-3/5 text-right xs:basis-1/2">
+            <p>
+              <span class="h2 text-primary-600">18:00</span>
+            </p>
+            <h3 class="h3 mt-4 text-secondary-600">Loca House</h3>
+            <p>Jl. Cemp. Putih Tengah I No.2A, Jakarta Pusat</p>
+            <a
+              class="variant-ringed-primary absolute bottom-0 right-0 flex items-center gap-2 rounded-md px-2"
+              target="_blank"
+              href="https://calendar.google.com/calendar/u/0?cid=65bee9fe831bb8bdbc11839da5dc815951be49557eacbeaca6973d54f8674dc5%40group.calendar.google.com"
+            >
+              <CalendarPlus size="16" />
+              add calendar</a
+            >
+          </div>
+          <div class="flex basis-2/5 flex-col justify-center xs:basis-1/2">
+            <div class="relative h-max">
+              <div
+                class="variant-glass absolute flex h-full w-full animate-pulse items-center justify-center"
+              >
+                Loading map...
+              </div>
+              <div class="h-52 w-full md:h-80">
+                <iframe
+                  src="https://www.google.com/maps/embed/v1/place?q=Loca+House,+Jalan+Cempaka+Putih+Tengah+I,+RT.6/RW.5,+East+Cempaka+Putih,+Central+Jakarta+City,+Jakarta,+Indonesia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                  class="h-full w-full"
+                  title="Map"
+                  style="border:0;filter: grayscale(70%) invert(87%)"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
     </Section>
 
     <Section id="rsvp" title="Nanti absen disini">
