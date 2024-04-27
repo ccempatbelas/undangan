@@ -220,11 +220,17 @@
       <div
         class="mt-8 flex justify-center object-none object-bottom"
       >
+        <p>Deadline 14 Mei 2024</p>
+      </div>
+      <div
+        class="mt-2 flex justify-center object-none object-bottom"
+      >
         <div class="flex max-h-full w-full max-w-lg flex-col justify-center gap-2">
           <a target="_blank" rel="noopener noreferrer" href="https://www.tokopedia.com/toko-beruangan/cc14-10-tahun-kaos-hitam-xs-406a6" class="flex w-full flex-col items-center justify-center"
             ><div class="relative border border-secondary-200 shadow-primary-300">
               <img
                 src="/images/0 kaos cc landscape 2.jpg"
+                alt="kaos cc"
               />
             </div>
           </a>
@@ -238,6 +244,7 @@
             ><div class="relative border border-primary-200 shadow-primary-300">
               <img
                 src="/images/0 polo cc landscape.jpg"
+                alt="polo cc"
               />
             </div>
           </a>
@@ -247,6 +254,42 @@
         class="mt-8 flex justify-center object-none object-bottom"
       >
       <p>kelebihan dana akan masuk ke uang kas. Yang ga punya Tokopedia atau butuh bantuan, bisa kontak <a
+          class="text-primary-300 underline"
+          target="_blank"
+          href="https://wa.me/628999966385">whatsapp DL</a
+        >.
+       </p>
+      </div>
+    </Section>
+
+    <Section id="rsvp" title=" Mari menjadi Backers" class="mb-64">
+      <div
+        class="mt-8 flex justify-center object-none object-bottom"
+      >
+        <p>Benefit yang didapatkan jika menjadi backers.</p>
+      </div>
+      <div
+        class="mt-8 flex justify-center object-none object-bottom"
+      >
+        <div class="flex max-h-full w-full max-w-lg flex-col justify-center gap-2">
+          <a href="/backers" class="flex w-full flex-col items-center justify-center"
+            ><div class="relative border border-secondary-200 shadow-primary-300">
+              <img
+                src="/images/sponsor-graph.png"
+                alt="sponsor graph"
+              />
+            </div>
+          </a>
+        </div>
+      </div>
+      <div
+        class="mt-8 flex justify-center object-none object-bottom"
+      >
+      <p>Lihat benefit lebih detail dengan contoh <a
+          class="text-secondary-300 underline"
+          href="/backers">disini</a
+        >.
+      Kelebihan dana akan masuk ke uang kas. Kontak <a
           class="text-primary-300 underline"
           target="_blank"
           href="https://wa.me/628999966385">whatsapp DL</a
