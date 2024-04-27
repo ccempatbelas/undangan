@@ -1,31 +1,7 @@
 <script lang="ts">
-  import { audio, cover, muted } from '@/lib/stores';
   import { inview } from 'svelte-inview';
   import Section from '@/lib/components/layouts/Section.svelte';
-  import { Volume2, CalendarPlus, Image, VolumeX, ArrowLeft, ArrowRight } from 'lucide-svelte';
-  import { fade } from 'svelte/transition';
-  import { superForm } from 'sveltekit-superforms/client';
-  import ShootingStar from '@/lib/components/ShootingStar.svelte';
-  import {
-    getModalStore,
-    type ModalSettings,
-    type ModalComponent,
-    popup,
-    type PopupSettings
-  } from '@skeletonlabs/skeleton';
-  import ImageModal from '@/lib/components/modals/ImageModal.svelte';
-  import { onMount } from 'svelte';
-  import Nav from '@/lib/components/Nav.svelte';
-  import Cover from '@/lib/components/Cover.svelte';
-
-
-
-  // Anmimation
-  let animOptions = {
-    rootMargin: '-100px',
-    unobserveOnEnter: true
-  };
-
+  import { Home } from 'lucide-svelte';
 </script>
 
 <svelte:head>
@@ -33,15 +9,6 @@
   <meta name="the description" content="Svelte demo app" />
 </svelte:head>
 
-<svelte:window
-  on:scroll={() => {
-    if (window.scrollY > window.innerHeight / 8) {
-      visible = true;
-    } else {
-      visible = false;
-    }
-  }}
-/>
 
 <!-- For Eager loading -->
 <div class="bg-nebula relative flex justify-center overflow-hidden">
@@ -91,4 +58,12 @@
       still building more exciting stuff here
     </p>
   </div>
+      <button
+        class="fixed left-3 opacity-70 backdrop-blur-sm max-md:top-3 md:bottom-6 md:left-6"
+        onclick="location.href='/'"
+      >
+        <div class="variant-filled relative aspect-square rounded-full p-2">
+            <Home  />
+        </div>
+      </button>
 </div>
