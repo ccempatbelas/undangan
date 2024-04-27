@@ -1,97 +1,7 @@
 <script lang="ts">
-  import { audio, cover, muted } from '@/lib/stores';
   import { inview } from 'svelte-inview';
   import Section from '@/lib/components/layouts/Section.svelte';
-  import { Volume2, CalendarPlus, Image, Home, ArrowLeft, ArrowRight } from 'lucide-svelte';
-  import { fade } from 'svelte/transition';
-  import { superForm } from 'sveltekit-superforms/client';
-  import ShootingStar from '@/lib/components/ShootingStar.svelte';
-  import {
-    getModalStore,
-    type ModalSettings,
-    type ModalComponent,
-    popup,
-    type PopupSettings
-  } from '@skeletonlabs/skeleton';
-  import ImageModal from '@/lib/components/modals/ImageModal.svelte';
-  import { onMount } from 'svelte';
-  import Nav from '@/lib/components/Nav.svelte';
-  import Cover from '@/lib/components/Cover.svelte';
-
-  // Load Data
-  export let data;
-  const modalStore = getModalStore();
-
-  const { form: guest } = superForm(data.guest, {
-    dataType: 'json'
-  });
-
-  // Days remaining
-  const daysRemaining = Math.ceil(
-    (new Date(new Date().getFullYear(), 7, 27).getTime() - new Date().getTime()) /
-      (1000 * 60 * 60 * 24)
-  );
-
-  // Gallery Images
-  const allImages = Object.keys(import.meta.glob('static/images/placeholder/*')).map((p) =>
-    p.replace('/static', '')
-  );
-  let imagePaths = allImages;
-  let img = '';
-  onMount(() => {
-    if ($guest.id) {
-      localStorage.setItem('code', $guest.id);
-    }
-    img = '/images/cover.jpg';
-  });
-
-  function openImage(i: number): void {
-    const c: ModalComponent = { ref: ImageModal };
-    const modal: ModalSettings = {
-      type: 'component',
-      component: c,
-      meta: { images: imagePaths, index: i }
-    };
-    modalStore.trigger(modal);
-  }
-
-  let visible = false;
-
-  // Anmimation
-  let animOptions = {
-    rootMargin: '-100px',
-    unobserveOnEnter: true
-  };
-
-  let inviewFlag = {
-    holyMat: false,
-    reception: false,
-    rsvp: false,
-    gift: false
-  };
-
-  let elemGallery: HTMLDivElement;
-
-  function multiColumnLeft(): void {
-    let x = elemGallery.scrollWidth;
-    if (elemGallery.scrollLeft !== 0) x = elemGallery.scrollLeft - elemGallery.clientWidth;
-    elemGallery.scroll(x, 0);
-  }
-
-  function multiColumnRight(): void {
-    let x = 0;
-    // -1 is used because different browsers use different methods to round scrollWidth pixels.
-    if (elemGallery.scrollLeft < elemGallery.scrollWidth - elemGallery.clientWidth - 1)
-      x = elemGallery.scrollLeft + elemGallery.clientWidth;
-    elemGallery.scroll(x, 0);
-  }
-
-  // popup
-  const popupHover: PopupSettings = {
-    event: 'hover',
-    target: 'popupHover',
-    placement: 'top'
-  };
+  import { Home } from 'lucide-svelte';
 </script>
 
 <svelte:head>
@@ -99,18 +9,9 @@
   <meta name="the description" content="Svelte demo app" />
 </svelte:head>
 
-<svelte:window
-  on:scroll={() => {
-    if (window.scrollY > window.innerHeight / 8) {
-      visible = true;
-    } else {
-      visible = false;
-    }
-  }}
-/>
 
 <!-- For Eager loading -->
-<div class="bg-nebula relative flex justify-center overflow-hidden">
+<div class="relative flex justify-center overflow-hidden">
   <div class="max-w-5xl">
     <header id="head" class="flex justify-center" transition:fade={{ duration: 3000 }}>
       <div
