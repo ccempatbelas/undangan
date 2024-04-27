@@ -189,7 +189,7 @@
 
     </Section>
 
-    <Section id="rsvp" title="Dibeli" class="mb-64">
+    <Section id="rsvp" title="Dibeli jualannya" class="mb-64">
       <div
         class="mt-8 flex justify-center object-none object-bottom"
       >
