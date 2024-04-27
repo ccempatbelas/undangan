@@ -121,10 +121,24 @@
     </header>
 
       <Section id="rsvp" title="Mari menjadi Backers">
-        <div class="mb-2 mt-8 flex justify-left">
-          <h3 class="text-secondary-500">Tier 4 - nyumbang aja</h3>
+        <div class="mt-16">
+        <p class="text-center">
+          Mau jadi backers? Contact <a
+            class="text-primary-300 underline"
+            target="_blank"
+            href="https://wa.me/628999966385">DL</a
+          >
+        </p>
         </div>
-        <div class="flex justify-left">
+                <img
+                  src="/images/sponsor-graph.png"
+                  alt="sponsor-graph.png"
+                  class="mt-4"
+                />
+        <div class="mb-2 mt-16 flex justify-left">
+          <h3 class="text-primary-500">Tier 4 - nyumbang aja</h3>
+        </div>
+        <div class="flex justify-left text-secondary-500">
           Minimum 200 ribu, ga ada maksimum.
         </div>
         <div class="flex justify-left">
@@ -134,33 +148,120 @@
                href="/sponsor">kanisius14.cc/sponsor</a>
           </p>
         </div>
+        <img
+          src="/images/poster-example.jpeg"
+          alt="poster-example.jpeg"
+          class="mt-4"
+        />
+
+
+        <div class="mb-2 mt-16 flex justify-left">
+          <h3 class="text-primary-500">Tier 3 - Sambil ngiklan (Recommended)</h3>
+        </div>
+        <div class="flex justify-left text-secondary-500">
+          500 ribu
+        </div>
+        <div class="flex justify-center">
+          <p class="justify-center">
+            Logo atau foto di banner, poster, dan website <a
+               class="text-primary-500 underline"
+               href="/sponsor">kanisius14.cc/sponsor</a>
+          </p>
+        </div>
+        <img
+          src="/images/contoh-halaman-sponsor.jpg"
+          alt="contoh-halaman-sponsor.jpg"
+          class="mt-4"
+        />
+        <div class="flex justify-center mt-8">
+          <p class="justify-center">
+            Dapat setengah halaman di 10th anniversary yearbook. Bebas mau diisi apapun, ga ngiklan jg gpp.
+          </p>
+        </div>
 
         <div>
           <div class="flex max-h-full w-full max-w-lg flex-col justify-center gap-8">
-            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/locahouse.id/" class="flex w-full flex-col items-center justify-center"
-              ><div class="relative border border-primary-200 shadow-primary-300">
-                <img
-                  src="/images/logo-loca-house.png"
-                  alt="click"
-                />
-              </div>
+            <div class="relative border border-primary-200 shadow-primary-300 mt-4">
               <div>
-                Cafe, Resto, Catering, Private Event
+                Contoh halaman yang biasa.
               </div>
-            </a>
+                <img
+                  src="/images/yearbook-tanpa-sponsor.jpg"
+                  alt="yearbook-tanpa-sponsor.jpg"
+                />
+            </div>
+            <div class="relative border border-primary-200 shadow-primary-300 mt-4">
+              <div>
+                Contoh halaman yang ngesponsor.
+              </div>
+                <img
+                  src="/images/yearbook-sponsored.jpg"
+                  alt="yearbook-sponsored.jpg"
+                />
+            </div>
           </div>
         </div>
-        <p class="text-center">
-          Want to support this event? Contact <a
-            class="text-primary-300 underline"
-            target="_blank"
-            href="https://wa.me/628999966385">here</a
-          > :)
-        </p>
+
+
+        <div class="mb-2 mt-16 flex justify-left">
+          <h3 class="text-primary-500">Tier 2 - mau flexing</h3>
+        </div>
+        <div class="flex justify-left text-secondary-500">
+          5 juta
+        </div>
+        <div class="flex justify-center">
+          <p class="justify-center">
+            Logo lebih besar, posisi lebih awal.
+          </p>
+        </div>
+        <div class="flex justify-center">
+          <p class="justify-center">
+            Dapat X banner atau standing banner yang akan ada saat acara.
+          </p>
+        </div>
+        <div class="flex justify-center">
+          <p class="justify-center">
+            Bisa berdiskusi untuk benefit yang lebih sesuai dengan kebutuhan backer.
+          </p>
+        </div>
+
+
+        <div class="mb-2 mt-16 flex justify-left">
+          <h3 class="text-primary-500">Tier 1 - bayarin semua</h3>
+        </div>
+        <div class="flex justify-left text-secondary-500">
+          20 juta
+        </div>
+        <div class="flex justify-center">
+          <p class="justify-center">
+            Hanya ada 1 backer untuk tier ini.
+          </p>
+        </div>
+        <div class="flex justify-center">
+          <p class="justify-center">
+            Nama akan dicantumkan di nama acara. Seperti "Reuni 10 tahun by Lorem"
+          </p>
+        </div>
+        <div class="flex justify-center">
+          <p class="justify-center">
+            Logo paling besar, posisi paling awal.
+          </p>
+        </div>
+        <div class="flex justify-center">
+          <p class="justify-center">
+            Bisa berdiskusi untuk benefit yang lebih sesuai dengan kebutuhan backer.
+          </p>
+        </div>
       </Section>
 
-    <p class="mb-20 text-center text-sm text-primary-200 [&>*]:pointer-events-none">
-      still building more exciting stuff here
-    </p>
+      <div class="mb-20 text-center text-sm">
+      <p class="text-center">
+        Mau jadi backers? Contact <a
+          class="text-primary-300 underline"
+          target="_blank"
+          href="https://wa.me/628999966385">DL</a
+        >
+      </p>
+      </div>
   </div>
 </div>
