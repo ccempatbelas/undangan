@@ -2,7 +2,7 @@
   import { audio, cover, muted } from '@/lib/stores';
   import { inview } from 'svelte-inview';
   import Section from '@/lib/components/layouts/Section.svelte';
-  import { Volume2, CalendarPlus, Image, VolumeX, ArrowLeft, ArrowRight } from 'lucide-svelte';
+  import { Volume2, CalendarPlus, Image, Home, ArrowLeft, ArrowRight } from 'lucide-svelte';
   import { fade } from 'svelte/transition';
   import { superForm } from 'sveltekit-superforms/client';
   import ShootingStar from '@/lib/components/ShootingStar.svelte';
@@ -127,7 +127,7 @@
             class="text-primary-300 underline"
             target="_blank"
             href="https://wa.me/628999966385">DL</a
-          >
+          >. Tidak ada deadline.
         </p>
         </div>
         <div class="relative flex max-h-full w-full max-w-lg flex-col justify-center gap-2">
@@ -272,5 +272,14 @@
         >
       </p>
       </div>
+
+      <button
+        class="fixed left-3 opacity-70 backdrop-blur-sm max-md:top-3 md:bottom-6 md:left-6"
+        onclick="location.href='/'"
+      >
+        <div class="variant-filled relative aspect-square rounded-full p-2">
+            <Home  />
+        </div>
+      </button>
   </div>
 </div>
