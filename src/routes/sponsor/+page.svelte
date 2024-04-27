@@ -42,7 +42,7 @@
             </a>
           </div>
         </div>
-        <p class="text-center">
+        <p class="text-center mb-20 text-center text-sm">
           Want to support this event? Check <a
               class="text-primary-300 underline"
               href="/backers">here</a
@@ -53,10 +53,6 @@
           > :)
         </p>
       </Section>
-
-    <p class="mb-20 text-center text-sm text-primary-200 [&>*]:pointer-events-none">
-      still building more exciting stuff here
-    </p>
   </div>
       <button
         class="fixed left-3 opacity-70 backdrop-blur-sm max-md:top-3 md:bottom-6 md:left-6"
