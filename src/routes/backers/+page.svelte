@@ -130,11 +130,13 @@
           >
         </p>
         </div>
+        <div class="relative flex max-h-full w-full max-w-lg flex-col justify-center gap-2">
                 <img
                   src="/images/sponsor-graph.png"
                   alt="sponsor-graph.png"
                   class="mt-4"
                 />
+         </div>
         <div class="mb-2 mt-16 flex justify-left">
           <h3 class="text-primary-500">Tier 4 - nyumbang aja</h3>
         </div>
@@ -148,11 +150,13 @@
                href="/sponsor">kanisius14.cc/sponsor</a>
           </p>
         </div>
+        <div class="relative border border-secondary-200 shadow-primary-300 flex max-h-full w-full max-w-lg flex-col justify-center gap-2">
         <img
           src="/images/poster-example.jpeg"
           alt="poster-example.jpeg"
           class="mt-4"
         />
+        </div>
 
 
         <div class="mb-2 mt-16 flex justify-left">
@@ -168,11 +172,14 @@
                href="/sponsor">kanisius14.cc/sponsor</a>
           </p>
         </div>
+
+        <div class="relative border border-secondary-200 shadow-primary-300 flex max-h-full w-full max-w-lg flex-col justify-center gap-2">
         <img
           src="/images/contoh-halaman-sponsor.jpg"
           alt="contoh-halaman-sponsor.jpg"
           class="mt-4"
         />
+        </div>
         <div class="flex justify-center mt-8">
           <p class="justify-center">
             Dapat setengah halaman di 10th anniversary yearbook. Bebas mau diisi apapun, ga ngiklan jg gpp.
@@ -181,7 +188,8 @@
 
         <div>
           <div class="flex max-h-full w-full max-w-lg flex-col justify-center gap-8">
-            <div class="relative border border-primary-200 shadow-primary-300 mt-4">
+
+            <div class="relative border border-primary-200 shadow-primary-300 flex max-h-full w-full max-w-lg flex-col justify-center gap-2">
               <div>
                 Contoh halaman yang biasa.
               </div>
@@ -190,7 +198,8 @@
                   alt="yearbook-tanpa-sponsor.jpg"
                 />
             </div>
-            <div class="relative border border-primary-200 shadow-primary-300 mt-4">
+
+            <div class="relative border border-primary-200 shadow-primary-300 flex max-h-full w-full max-w-lg flex-col justify-center gap-2">
               <div>
                 Contoh halaman yang ngesponsor.
               </div>
