@@ -245,7 +245,7 @@
         class="mt-8 flex justify-center object-none object-bottom"
       >
         <div class="flex max-h-full w-full max-w-lg flex-col justify-center gap-2">
-          <a href="/become-backers" class="flex w-full flex-col items-center justify-center"
+          <a target="_blank" rel="noopener noreferrer" href="/become-backers" class="flex w-full flex-col items-center justify-center"
             ><div class="relative border border-secondary-200 shadow-primary-300">
               <img
                 src="/images/sponsor-graph.png"
@@ -259,6 +259,7 @@
         class="mt-8 flex justify-center object-none object-bottom"
       >
       <p>Lihat benefit lebih detail dengan contoh <a
+       target="_blank" rel="noopener noreferrer"
           class="text-secondary-300 underline"
           href="/become-backers">disini</a
         >.
@@ -289,15 +290,20 @@
         </div>
       </div>
     </Section>
-    <a href="/backers" class="mb-20 text-center justify-center flex">
+    <a target="_blank" rel="noopener noreferrer" href="/backers" class="mb-10 text-center justify-center flex">
       <div class="text-sm">
+        <div class="mb-2 text-secondary-400">
         supported by
+        </div>
         <div class="center"
-        style="width:50px;display:flex;align-items: center;">
+        >
       <img
         src="/images/logo-smol/logo-smol-locahouse.jpg"
         alt="logo-smol-locahouse.jpg"
+        style="width:50px;"
+        class="inline-flex"
       />
+       <p class="inline-flex" style="font-size:8px; ">nambah lagi dong</p>
       </div>
       </div>
     </a>

@@ -44,8 +44,9 @@
         </div>
         <p class="text-center mb-20 text-center text-sm">
           Want to support this event? Check <a
-              class="text-primary-300 underline"
-              href="/backers">here</a
+           target="_blank" rel="noopener noreferrer"
+              class="text-secondary-300 underline"
+              href="/become-backers">here</a
             > or contact <a
             class="text-primary-300 underline"
             target="_blank"

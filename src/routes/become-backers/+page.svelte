@@ -47,6 +47,7 @@
         <div class="flex justify-left">
           <p class="justify-left">
             Nama ditulis di banner, poster, dan website <a
+             target="_blank" rel="noopener noreferrer"
                class="text-primary-500 underline"
                href="/backers">kanisius14.cc/backers</a>
           </p>
@@ -69,6 +70,7 @@
         <div class="flex justify-center">
           <p class="justify-center">
             Logo atau foto di banner, poster, dan website <a
+             target="_blank" rel="noopener noreferrer"
                class="text-primary-500 underline"
                href="/backers">kanisius14.cc/backers</a>
           </p>
@@ -168,11 +170,32 @@
       <p class="text-center">
         Mau jadi backers? Contact <a
           class="text-primary-300 underline"
-          target="_blank"
+           target="_blank" rel="noopener noreferrer"
           href="https://wa.me/628999966385">DL</a
-        >
-      </p>
+        >.
+       Cek yang sudah jadi  <a
+          class="text-secondary-300 underline"
+           target="_blank" rel="noopener noreferrer"
+          href="/backers">backers</a
+        ></p>
       </div>
+    <a target="_blank" rel="noopener noreferrer" href="/backers" class="mb-10 text-center justify-center flex">
+      <div class="text-sm">
+        <div class="mb-2 text-secondary-400">
+        supported by
+        </div>
+        <div class="center"
+        >
+      <img
+        src="/images/logo-smol/logo-smol-locahouse.jpg"
+        alt="logo-smol-locahouse.jpg"
+        style="width:50px;"
+        class="inline-flex"
+      />
+       <p class="inline-flex" style="font-size:8px; ">nambah lagi dong</p>
+      </div>
+      </div>
+    </a>
 
       <button
         class="fixed left-3 opacity-70 backdrop-blur-sm max-md:top-3 md:bottom-6 md:left-6"
