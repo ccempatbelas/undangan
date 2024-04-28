@@ -289,8 +289,17 @@
         </div>
       </div>
     </Section>
-    <p class="mb-20 text-center text-sm text-primary-200 [&>*]:pointer-events-none">
-      Mari ketemuaannnn
-    </p>
+    <a href="/backers" class="mb-20 text-center justify-center flex">
+      <div class="text-sm">
+        supported by
+        <div class="center"
+        style="width:50px;display:flex;align-items: center;">
+      <img
+        src="/images/logo-smol/logo-smol-locahouse.jpg"
+        alt="logo-smol-locahouse.jpg"
+      />
+      </div>
+      </div>
+    </a>
   </div>
 </div>
