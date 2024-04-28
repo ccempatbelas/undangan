@@ -91,7 +91,7 @@
         class="animShow gradient-heading flex flex-col items-center gap-8 from-primary-400 via-primary-200 to-primary-100 pt-4"
       >
         <h1 class="h1 text-primary-500">CC14 10 Tahun!!!</h1>
-        <h2 class="h4 text-secondary-500">Ketemuan yuuuu</h2>
+        <h2 class="h4 text-secondary-500">Ngumpul bareng lagiiii</h2>
       </div>
     </header>
 
@@ -226,11 +226,11 @@
       <div
         class="mt-8 flex justify-center object-none object-bottom"
       >
-      <p>kelebihan dana akan masuk ke uang kas. Yang ga punya Tokopedia atau butuh bantuan, bisa kontak <a
+      <p>Yang ga punya Tokopedia atau butuh bantuan, bisa kontak <a
           class="text-primary-300 underline"
           target="_blank"
           href="https://wa.me/628999966385">whatsapp DL</a
-        >.
+        >. Kelebihan dana akan masuk ke uang kas.
        </p>
       </div>
     </Section>
@@ -262,11 +262,11 @@
           class="text-secondary-300 underline"
           href="/backers">disini</a
         >.
-      Kelebihan dana akan masuk ke uang kas. Kontak <a
+      Untuk jadi backers, kontak <a
           class="text-primary-300 underline"
           target="_blank"
           href="https://wa.me/628999966385">whatsapp DL</a
-        >.
+        >. Kelebihan dana akan masuk ke uang kas.
        </p>
       </div>
     </Section>
