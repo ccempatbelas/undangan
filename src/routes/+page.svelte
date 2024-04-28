@@ -245,7 +245,7 @@
         class="mt-8 flex justify-center object-none object-bottom"
       >
         <div class="flex max-h-full w-full max-w-lg flex-col justify-center gap-2">
-          <a href="/backers" class="flex w-full flex-col items-center justify-center"
+          <a href="/become-backers" class="flex w-full flex-col items-center justify-center"
             ><div class="relative border border-secondary-200 shadow-primary-300">
               <img
                 src="/images/sponsor-graph.png"
@@ -260,7 +260,7 @@
       >
       <p>Lihat benefit lebih detail dengan contoh <a
           class="text-secondary-300 underline"
-          href="/backers">disini</a
+          href="/become-backers">disini</a
         >.
       Untuk jadi backers, kontak <a
           class="text-primary-300 underline"
