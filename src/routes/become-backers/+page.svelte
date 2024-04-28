@@ -48,7 +48,7 @@
           <p class="justify-left">
             Nama ditulis di banner, poster, dan website <a
                class="text-primary-500 underline"
-               href="/sponsor">kanisius14.cc/sponsor</a>
+               href="/backers">kanisius14.cc/backers</a>
           </p>
         </div>
         <div class="relative border border-secondary-200 shadow-primary-300 flex max-h-full w-full max-w-lg flex-col justify-center gap-2">
@@ -70,7 +70,7 @@
           <p class="justify-center">
             Logo atau foto di banner, poster, dan website <a
                class="text-primary-500 underline"
-               href="/sponsor">kanisius14.cc/sponsor</a>
+               href="/backers">kanisius14.cc/backers</a>
           </p>
         </div>
 
