@@ -1,20 +1,11 @@
 <script lang="ts">
   import { inview } from 'svelte-inview';
   import Section from '@/lib/components/layouts/Section.svelte';
-  import { CalendarPlus, Image, ArrowLeft, ArrowRight } from 'lucide-svelte';
-  import { fade } from 'svelte/transition';
+  import { CalendarPlus, ArrowLeft, ArrowRight } from 'lucide-svelte';
   import { superForm } from 'sveltekit-superforms/client';
-  import {
-    getModalStore,
-    type ModalSettings,
-    type ModalComponent,
-    popup,
-    type PopupSettings
-  } from '@skeletonlabs/skeleton';
+  import { getModalStore, type ModalSettings, type ModalComponent } from '@skeletonlabs/skeleton';
   import ImageModal from '@/lib/components/modals/ImageModal.svelte';
   import { onMount } from 'svelte';
-  import Nav from '@/lib/components/Nav.svelte';
-  import Cover from '@/lib/components/Cover.svelte';
 
   // Load Data
   export let data;
@@ -29,12 +20,10 @@
     p.replace('/static', '')
   );
   let imagePaths = allImages;
-  let img = '';
   onMount(() => {
     if ($guest.id) {
       localStorage.setItem('code', $guest.id);
     }
-    img = '/images/cover.jpg';
   });
 
   function openImage(i: number): void {
@@ -68,20 +57,12 @@
       x = elemGallery.scrollLeft + elemGallery.clientWidth;
     elemGallery.scroll(x, 0);
   }
-
-  // popup
-  const popupHover: PopupSettings = {
-    event: 'hover',
-    target: 'popupHover',
-    placement: 'top'
-  };
 </script>
 
 <svelte:head>
   <title>CC14 10 tahun</title>
   <meta name="the description" content="Svelte demo app" />
 </svelte:head>
-
 
 <!-- For Eager loading -->
 <div class="relative flex justify-center overflow-hidden">
@@ -146,128 +127,114 @@
 
     <Section id="schedule" title="Makan Malam Santai">
       <h1 class="h1 mb-4 mt-12">Sabtu, 27 Juli 2024</h1>
-        <div
-          class="flex opacity-0"
-          use:inview={animOptions}
-          class:animRight={true}
-        >
-          <div class="relative mr-4 basis-3/5 text-right xs:basis-1/2">
-            <p>
-              <span class="h2 text-primary-600">18:00</span>
-            </p>
-            <h3 class="h3 mt-4 text-secondary-600">Loca House</h3>
-            <p>Jl. Cemp. Putih Tengah I No.2A, Jakarta Pusat</p>
-            <a
-              class="variant-ringed-primary absolute bottom-0 right-0 flex items-center gap-2 rounded-md px-2"
-              target="_blank"
-              href="https://calendar.google.com/calendar/u/0?cid=65bee9fe831bb8bdbc11839da5dc815951be49557eacbeaca6973d54f8674dc5%40group.calendar.google.com"
+      <div class="flex opacity-0" use:inview={animOptions} class:animRight={true}>
+        <div class="relative mr-4 basis-3/5 text-right xs:basis-1/2">
+          <p>
+            <span class="h2 text-primary-600">18:00</span>
+          </p>
+          <h3 class="h3 mt-4 text-secondary-600">Loca House</h3>
+          <p>Jl. Cemp. Putih Tengah I No.2A, Jakarta Pusat</p>
+          <a
+            class="variant-ringed-primary absolute bottom-0 right-0 flex items-center gap-2 rounded-md px-2"
+            target="_blank"
+            href="https://calendar.google.com/calendar/u/0?cid=65bee9fe831bb8bdbc11839da5dc815951be49557eacbeaca6973d54f8674dc5%40group.calendar.google.com"
+          >
+            <CalendarPlus size="16" />
+            add calendar</a
+          >
+        </div>
+        <div class="flex basis-2/5 flex-col justify-center xs:basis-1/2">
+          <div class="relative h-max">
+            <div
+              class="variant-glass absolute flex h-full w-full animate-pulse items-center justify-center"
             >
-              <CalendarPlus size="16" />
-              add calendar</a
-            >
-          </div>
-          <div class="flex basis-2/5 flex-col justify-center xs:basis-1/2">
-            <div class="relative h-max">
-              <div
-                class="variant-glass absolute flex h-full w-full animate-pulse items-center justify-center"
-              >
-                Loading map...
-              </div>
-              <div class="h-52 w-full md:h-80">
-                <iframe
-                  src="https://www.google.com/maps/embed/v1/place?q=Loca+House,+Jalan+Cempaka+Putih+Tengah+I,+RT.6/RW.5,+East+Cempaka+Putih,+Central+Jakarta+City,+Jakarta,+Indonesia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-                  class="h-full w-full"
-                  title="Map"
-                  style="border:0;filter: grayscale(70%) invert(87%)"
-                  loading="lazy"
-                  referrerpolicy="no-referrer-when-downgrade"
-                ></iframe>
-              </div>
+              Loading map...
+            </div>
+            <div class="h-52 w-full md:h-80">
+              <iframe
+                src="https://www.google.com/maps/embed/v1/place?q=Loca+House,+Jalan+Cempaka+Putih+Tengah+I,+RT.6/RW.5,+East+Cempaka+Putih,+Central+Jakarta+City,+Jakarta,+Indonesia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                class="h-full w-full"
+                title="Map"
+                style="border:0;filter: grayscale(70%) invert(87%)"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
-
-    </Section>
+        </div>
+      </div></Section
+    >
 
     <Section id="rsvp" title="Dibeli jualannya" class="mb-64">
-      <div
-        class="mt-8 flex justify-center object-none object-bottom"
-      >
+      <div class="mt-8 flex justify-center object-none object-bottom">
         <p>Deadline 14 Mei 2024</p>
       </div>
-      <div
-        class="mt-2 flex justify-center object-none object-bottom"
-      >
+      <div class="mt-2 flex justify-center object-none object-bottom">
         <div class="flex max-h-full w-full max-w-lg flex-col justify-center gap-2">
-          <a target="_blank" rel="noopener noreferrer" href="https://www.tokopedia.com/toko-beruangan/cc14-10-tahun-kaos-hitam-xs-406a6" class="flex w-full flex-col items-center justify-center"
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.tokopedia.com/toko-beruangan/cc14-10-tahun-kaos-hitam-xs-406a6"
+            class="flex w-full flex-col items-center justify-center"
             ><div class="relative border border-secondary-200 shadow-primary-300">
-              <img
-                src="/images/0 kaos cc landscape 2.jpg"
-                alt="kaos cc"
-              />
+              <img src="/images/0 kaos cc landscape 2.jpg" alt="kaos cc" />
             </div>
           </a>
         </div>
       </div>
-      <div
-        class="mt-8 flex justify-center object-none object-bottom"
-      >
+      <div class="mt-8 flex justify-center object-none object-bottom">
         <div class="flex max-h-full w-full max-w-lg flex-col justify-center gap-2">
-          <a target="_blank" rel="noopener noreferrer" href="https://www.tokopedia.com/toko-beruangan/cc14-10-tahun-kaos-berkerah-polo-shirt-putih-xs-b5f29" class="flex w-full flex-col items-center justify-center"
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.tokopedia.com/toko-beruangan/cc14-10-tahun-kaos-berkerah-polo-shirt-putih-xs-b5f29"
+            class="flex w-full flex-col items-center justify-center"
             ><div class="relative border border-primary-200 shadow-primary-300">
-              <img
-                src="/images/0 polo cc landscape.jpg"
-                alt="polo cc"
-              />
+              <img src="/images/0 polo cc landscape.jpg" alt="polo cc" />
             </div>
           </a>
         </div>
       </div>
-      <div
-        class="mt-8 flex justify-center object-none object-bottom"
-      >
-      <p>Yang ga punya Tokopedia atau butuh bantuan, bisa kontak <a
-          class="text-primary-300 underline"
-          target="_blank"
-          href="https://wa.me/628999966385">whatsapp DL</a
-        >. Kelebihan dana akan masuk ke uang kas.
-       </p>
+      <div class="mt-8 flex justify-center object-none object-bottom">
+        <p>
+          Yang ga punya Tokopedia atau butuh bantuan, bisa kontak <a
+            class="text-primary-300 underline"
+            target="_blank"
+            href="https://wa.me/628999966385">whatsapp DL</a
+          >. Kelebihan dana akan masuk ke uang kas.
+        </p>
       </div>
     </Section>
 
     <Section id="rsvp" title=" Mari menjadi Backers" class="mb-64">
-      <div
-        class="mt-8 flex justify-center object-none object-bottom"
-      >
+      <div class="mt-8 flex justify-center object-none object-bottom">
         <p>Benefit yang didapatkan jika menjadi backers.</p>
       </div>
-      <div
-        class="mt-8 flex justify-center object-none object-bottom"
-      >
+      <div class="mt-8 flex justify-center object-none object-bottom">
         <div class="flex max-h-full w-full max-w-lg flex-col justify-center gap-2">
-          <a target="_blank" rel="noopener noreferrer" href="/become-backers" class="flex w-full flex-col items-center justify-center"
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="/become-backers"
+            class="flex w-full flex-col items-center justify-center"
             ><div class="relative border border-secondary-200 shadow-primary-300">
-              <img
-                src="/images/sponsor-graph.png"
-                alt="sponsor graph"
-              />
+              <img src="/images/sponsor-graph.png" alt="sponsor graph" />
             </div>
           </a>
         </div>
       </div>
-      <div
-        class="mt-8 flex justify-center object-none object-bottom"
-      >
-      <p>Lihat benefit lebih detail dengan contoh <a
-       target="_blank" rel="noopener noreferrer"
-          class="text-secondary-300 underline"
-          href="/become-backers">disini</a
-        >.
-      Untuk jadi backers, kontak <a
-          class="text-primary-300 underline"
-          target="_blank"
-          href="https://wa.me/628999966385">whatsapp DL</a
-        >. Kelebihan dana akan masuk ke uang kas.
-       </p>
+      <div class="mt-8 flex justify-center object-none object-bottom">
+        <p>
+          Lihat benefit lebih detail dengan contoh <a
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-secondary-300 underline"
+            href="/become-backers">disini</a
+          >. Untuk jadi backers, kontak
+          <a class="text-primary-300 underline" target="_blank" href="https://wa.me/628999966385"
+            >whatsapp DL</a
+          >. Kelebihan dana akan masuk ke uang kas.
+        </p>
       </div>
     </Section>
     <Section id="rsvp" title="Nanti absen disini">
@@ -288,21 +255,18 @@
         </div>
       </div>
     </Section>
-    <a href="/backers" class="mb-10 text-center justify-center flex">
+    <a href="/backers" class="mb-10 flex justify-center text-center">
       <div class="text-sm">
-        <div class="mb-2 text-secondary-400">
-        supported by
+        <div class="mb-2 text-secondary-400">supported by</div>
+        <div class="center">
+          <img
+            src="/images/logo-smol/logo-smol-locahouse.jpg"
+            alt="logo-smol-locahouse.jpg"
+            style="width:50px;"
+            class="inline-flex"
+          />
+          <p class="inline-flex" style="font-size:8px; ">nambah lagi dong</p>
         </div>
-        <div class="center"
-        >
-      <img
-        src="/images/logo-smol/logo-smol-locahouse.jpg"
-        alt="logo-smol-locahouse.jpg"
-        style="width:50px;"
-        class="inline-flex"
-      />
-       <p class="inline-flex" style="font-size:8px; ">nambah lagi dong</p>
-      </div>
       </div>
     </a>
   </div>
