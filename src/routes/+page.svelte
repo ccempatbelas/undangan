@@ -86,9 +86,9 @@
 <!-- For Eager loading -->
 <div class="relative flex justify-center overflow-hidden">
   <div class="max-w-5xl">
-    <header id="head" class="flex justify-center" transition:fade={{ duration: 3000 }}>
+    <header id="head" class="flex justify-center">
       <div
-        class="animShow gradient-heading flex flex-col items-center gap-8 from-primary-400 via-primary-200 to-primary-100 pt-4"
+        class=" gradient-heading flex flex-col items-center gap-8 from-primary-400 via-primary-200 to-primary-100 pt-4"
       >
         <h1 class="h1 text-primary-500">CC14 10 Tahun!!!</h1>
         <h2 class="h4 text-secondary-500">Ngumpul bareng lagiiii</h2>
@@ -150,7 +150,6 @@
           class="flex opacity-0"
           use:inview={animOptions}
           class:animRight={true}
-          on:inview_change={({ detail }) => (true)}
         >
           <div class="relative mr-4 basis-3/5 text-right xs:basis-1/2">
             <p>
@@ -276,7 +275,6 @@
         class="mb-64 mt-8 flex justify-center object-none object-bottom opacity-0"
         use:inview={{ unobserveOnEnter: true }}
         class:animFade={true}
-        on:inview_change={({ detail }) => (itrue)}
       >
         <div class="flex max-h-full w-full max-w-lg flex-col justify-center gap-8">
           <p class="text-center">RSVP dibuka 14 Mei!</p>
@@ -290,7 +288,7 @@
         </div>
       </div>
     </Section>
-    <a target="_blank" rel="noopener noreferrer" href="/backers" class="mb-10 text-center justify-center flex">
+    <a href="/backers" class="mb-10 text-center justify-center flex">
       <div class="text-sm">
         <div class="mb-2 text-secondary-400">
         supported by
