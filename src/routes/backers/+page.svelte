@@ -9,7 +9,7 @@
 </svelte:head>
 
 <!-- For Eager loading -->
-<div class="bg-nebula relative flex justify-center overflow-hidden">
+<div class="relative flex justify-center overflow-hidden">
   <div class="max-w-5xl">
     <header id="head" class="flex justify-center">
       <div
@@ -20,7 +20,7 @@
     </header>
 
     <Section id="rsvp" title="This event is supported by" class="h4 text-secondary-500">
-      <div class="mb-64 mt-8 flex justify-center object-none object-bottom opacity-0">
+      <div class="mb-64 mt-8 flex justify-center object-none object-bottom">
         <div class="flex max-h-full w-full max-w-lg flex-col justify-center gap-8">
           <a
             target="_blank"
