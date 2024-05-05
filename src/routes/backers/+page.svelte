@@ -36,8 +36,6 @@
       </div>
       <p class="mb-20 text-center text-sm">
         Want to support this event? Check <a
-          target="_blank"
-          rel="noopener noreferrer"
           class="text-secondary-300 underline"
           href="/become-backers">here</a
         >

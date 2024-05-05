@@ -39,8 +39,6 @@
       <div class="justify-left flex">
         <p class="justify-left">
           Nama ditulis di banner, poster, dan website <a
-            target="_blank"
-            rel="noopener noreferrer"
             class="text-primary-500 underline"
             href="/backers">kanisius14.cc/backers</a
           >
@@ -59,8 +57,6 @@
       <div class="flex justify-center">
         <p class="justify-center">
           Logo atau foto di banner, poster, dan website <a
-            target="_blank"
-            rel="noopener noreferrer"
             class="text-primary-500 underline"
             href="/backers">kanisius14.cc/backers</a
           >
@@ -149,15 +145,11 @@
         >. Cek yang sudah jadi
         <a
           class="text-secondary-300 underline"
-          target="_blank"
-          rel="noopener noreferrer"
           href="/backers">backers</a
         >
       </p>
     </div>
     <a
-      target="_blank"
-      rel="noopener noreferrer"
       href="/backers"
       class="mb-10 flex justify-center text-center"
     >
