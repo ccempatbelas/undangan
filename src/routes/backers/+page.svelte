@@ -21,16 +21,47 @@
 
     <Section id="rsvp" title="This event is supported by" class="h4 text-secondary-500">
       <div class="mb-64 mt-8 flex justify-center object-none object-bottom">
-        <div class="flex max-h-full w-full max-w-lg flex-col justify-center gap-8">
+        <div class="flex max-h-full w-full max-w-lg flex-col justify-center gap-4" style="font-size: {14 + 'px'}">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://linktr.ee/DuniaAuto"
+            class="flex w-full flex-col items-center justify-center"
+            ><div class="relative border border-primary-200 shadow-primary-300">
+              <img src="/images/logo-backers/logo-duniaauto.jpg" alt="logo-duniaauto" />
+            </div>
+            <div>Aksesoris mobil, emblem, stiker, dll. | Reinard</div>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.halim-sakti.com/products"
+            class="flex w-full flex-col items-center justify-center"
+            ><div class="relative border border-primary-200 shadow-primary-300">
+              <img src="/images/logo-backers/logo-halim-sakti.jpg" alt="logo-halim-sakti" />
+            </div>
+            <div>Speciality and industrial chemicals supplier | Bampi</div>
+          </a>
           <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.instagram.com/locahouse.id/"
             class="flex w-full flex-col items-center justify-center"
-            ><div class="relative border border-primary-200 shadow-primary-300">
-              <img src="/images/logo-loca-house.png" alt="click" />
+            
+            ><div class="relative border border-primary-200 shadow-primary-300" >
+              <img src="/images/logo-backers/logo-loca-house.png" alt="loca-house" />
             </div>
-            <div>Cafe, Resto, Catering, Private Event</div>
+            <div>Cafe, Resto, Catering, Private Event | Yosta</div>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.vidio.com/categories/movies"
+            class="flex w-full flex-col items-center justify-center"
+            ><div class="relative border border-primary-200 shadow-primary-300">
+              <img src="/images/logo-backers/logo-dl.jpg" alt="logo-dl" />
+            </div>
+            <div>Nonton apa aja di Vidio | DL</div>
           </a>
         </div>
       </div>
