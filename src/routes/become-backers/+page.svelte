@@ -157,12 +157,29 @@
         <div class="mb-2 text-secondary-400">supported by</div>
         <div class="center">
           <img
+            src="/images/logo-smol/logo-smol-duniaauto.jpg"
+            alt="logo-smol-duniaauto.jpg"
+            style="width:50px;"
+            class="inline-flex"
+          />
+          <img
+            src="/images/logo-smol/logo-smol-halim-sakti.jpg"
+            alt="logo-smol-halim-sakti.jpg"
+            style="width:50px;"
+            class="inline-flex"
+          />
+          <img
             src="/images/logo-smol/logo-smol-locahouse.jpg"
             alt="logo-smol-locahouse.jpg"
             style="width:50px;"
             class="inline-flex"
           />
-          <p class="inline-flex" style="font-size:8px; ">nambah lagi dong</p>
+          <img
+            src="/images/logo-smol/logo-smol-dl.jpg"
+            alt="logo-smol-dl.jpg"
+            style="width:50px;"
+            class="inline-flex"
+          />
         </div>
       </div>
     </a>
