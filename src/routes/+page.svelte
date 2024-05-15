@@ -229,7 +229,9 @@
           >. Untuk jadi backers, kontak
           <a class="text-primary-300 underline" target="_blank" href="https://wa.me/628999966385"
             >whatsapp DL</a
-          >. Kelebihan dana akan masuk ke uang kas.
+          > atau
+          <a class="text-primary-300 underline" target="_blank" href="https://forms.gle/R8tGcz5UwGXbWn4V9"
+          >isi ini</a>. Kelebihan dana akan masuk ke uang kas.
         </p>
       </div>
     </Section>

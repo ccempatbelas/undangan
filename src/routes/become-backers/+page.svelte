@@ -26,7 +26,9 @@
             class="text-primary-300 underline"
             target="_blank"
             href="https://wa.me/628999966385">DL</a
-          >. Tidak ada deadline.
+          > atau
+          <a class="text-primary-300 underline" target="_blank" href="https://forms.gle/R8tGcz5UwGXbWn4V9"
+          >isi ini</a>. Tidak ada deadline.
         </p>
       </div>
       <div class="relative flex max-h-full w-full max-w-lg flex-col justify-center gap-2">
@@ -142,7 +144,9 @@
           target="_blank"
           rel="noopener noreferrer"
           href="https://wa.me/628999966385">DL</a
-        >. Cek yang sudah jadi
+        > atau
+        <a class="text-primary-300 underline" target="_blank" href="https://forms.gle/R8tGcz5UwGXbWn4V9"
+        >isi ini</a>. Cek yang sudah jadi
         <a
           class="text-secondary-300 underline"
           href="/backers">backers</a
