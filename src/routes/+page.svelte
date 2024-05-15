@@ -167,7 +167,7 @@
 
     <Section id="rsvp" title="Dibeli jualannya" class="mb-64">
       <div class="mt-8 flex justify-center object-none object-bottom">
-        <p>Deadline 14 Mei 2024</p>
+        <p>Deadline 1 Juni 2024</p>
       </div>
       <div class="mt-2 flex justify-center object-none object-bottom">
         <div class="flex max-h-full w-full max-w-lg flex-col justify-center gap-2">
@@ -240,7 +240,7 @@
         class:animFade={true}
       >
         <div class="flex max-h-full w-full max-w-lg flex-col justify-center gap-8">
-          <p class="text-center">RSVP dibuka 14 Mei!</p>
+          <p class="text-center">RSVP dibuka 1 Juni!</p>
           <div class="relative">
             <div
               class="gradient-heading animScale rounded-lg border border-primary-200 from-primary-500 to-primary-50 px-8 py-4 text-3xl shadow-primary-300 text-shadow-sm md:text-5xl"
