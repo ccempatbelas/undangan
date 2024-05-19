@@ -25,6 +25,16 @@
           <a
             target="_blank"
             rel="noopener noreferrer"
+            href="hhttps://linktr.ee/colonytackle"
+            class="flex w-full flex-col items-center justify-center"
+            ><div class="relative border border-primary-200 shadow-primary-300">
+              <img src="/images/logo-backers/logo-colony-tackle.jpg" alt="logo-colony-tackle" />
+            </div>
+            <div>Distributor Fishing Hook | Adhe</div>
+          </a>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
             href="https://linktr.ee/DuniaAuto"
             class="flex w-full flex-col items-center justify-center"
             ><div class="relative border border-primary-200 shadow-primary-300">

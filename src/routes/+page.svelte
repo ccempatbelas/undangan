@@ -257,6 +257,14 @@
       <div class="text-sm">
         <div class="mb-2 text-secondary-400">supported by</div>
         <div class="center">
+         <img
+           src="/images/logo-smol/logo-smol-colony-tackle.jpg"
+           alt="logo-smol-colony-tackle.jpg"
+           style="width:100px;"
+           class="inline-flex"
+         />
+        </div>
+        <div class="center">
           <img
             src="/images/logo-smol/logo-smol-duniaauto.jpg"
             alt="logo-smol-duniaauto.jpg"
