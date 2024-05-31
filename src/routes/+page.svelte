@@ -178,7 +178,7 @@
             href="https://www.tokopedia.com/toko-beruangan/cc14-10-tahun-kaos-hitam-xs-406a6"
             class="flex w-full flex-col items-center justify-center"
             ><div class="relative border border-secondary-200 shadow-primary-300">
-              <img src="/images/0 kaos cc landscape 2.jpg" alt="kaos cc" />
+              <img src="/images/0 kaos cc landscape 3.jpg" alt="kaos cc" />
             </div>
           </a>
         </div>
