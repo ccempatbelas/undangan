@@ -1,6 +1,6 @@
 <script lang="ts">
   import Section from '@/lib/components/layouts/Section.svelte';
-  import { Home } from 'lucide-svelte';
+  import NavBar from '@/lib/components/NavBar.svelte';
 </script>
 
 <svelte:head>
@@ -87,9 +87,5 @@
       </p>
     </Section>
   </div>
-  <a class="fixed left-3 opacity-70 backdrop-blur-sm max-md:top-3 md:bottom-6 md:left-6" href="/">
-    <div class="variant-filled relative aspect-square rounded-full p-2">
-      <Home />
-    </div>
-  </a>
 </div>
+<NavBar />

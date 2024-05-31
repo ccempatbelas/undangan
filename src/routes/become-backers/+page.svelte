@@ -1,6 +1,7 @@
 <script lang="ts">
   import Section from '@/lib/components/layouts/Section.svelte';
-  import { Home } from 'lucide-svelte';
+  import NavBar from '@/lib/components/NavBar.svelte';
+  import SupportedBy from '@/lib/components/SupportedBy.svelte';
 </script>
 
 <svelte:head>
@@ -153,53 +154,7 @@
         >
       </p>
     </div>
-    <a
-      href="/backers"
-      class="mb-10 flex justify-center text-center"
-    >
-      <div class="text-sm">
-        <div class="mb-2 text-secondary-400">supported by</div><div class="center">
-        <div class="center">
-         <img
-           src="/images/logo-smol/logo-smol-colony-tackle.jpg"
-           alt="logo-smol-colony-tackle.jpg"
-           style="width:100px;"
-           class="inline-flex"
-         />
-        </div>
-        <div class="center">
-          <img
-            src="/images/logo-smol/logo-smol-duniaauto.jpg"
-            alt="logo-smol-duniaauto.jpg"
-            style="width:50px;"
-            class="inline-flex"
-          />
-          <img
-            src="/images/logo-smol/logo-smol-halim-sakti.jpg"
-            alt="logo-smol-halim-sakti.jpg"
-            style="width:50px;"
-            class="inline-flex"
-          />
-          <img
-            src="/images/logo-smol/logo-smol-locahouse.jpg"
-            alt="logo-smol-locahouse.jpg"
-            style="width:50px;"
-            class="inline-flex"
-          />
-          <img
-            src="/images/logo-smol/logo-smol-dl.jpg"
-            alt="logo-smol-dl.jpg"
-            style="width:50px;"
-            class="inline-flex"
-          />
-        </div>
-      </div>
-    </a>
-
-    <a class="fixed left-3 opacity-70 backdrop-blur-sm max-md:top-3 md:bottom-6 md:left-6" href="/">
-      <div class="variant-filled relative aspect-square rounded-full p-2">
-        <Home />
-      </div>
-    </a>
+    <SupportedBy />
   </div>
 </div>
+<NavBar />
