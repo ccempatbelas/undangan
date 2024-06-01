@@ -29,6 +29,12 @@
         class="inline-flex"
       />
       <img
+        src="/images/logo-smol/logo-smol-seknet.jpg"
+        alt="logo-seknet.jpg"
+        style="width:50px;"
+        class="inline-flex"
+      />
+      <img
         src="/images/logo-smol/logo-smol-locahouse.jpg"
         alt="logo-smol-locahouse.jpg"
         style="width:50px;"

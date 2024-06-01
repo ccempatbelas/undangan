@@ -39,6 +39,11 @@
             desc="Hotel UMA Sukalila | Willy"
           />
           <BackersCard
+            url="https://bit.ly/about_am"
+            image="logo-seknet"
+            desc="Economics Researcher and Consultant | AM"
+          />
+          <BackersCard
             url="https://linktr.ee/locahouse.id"
             image="logo-loca-house"
             desc="Cafe, Resto, Catering, Private Event | Yosta"
