@@ -17,7 +17,7 @@
     <div class="h4 text-secondary-500" style="margin-top: 200px;margin-bottom:200px;text-align:center;">
       Halaman ini lagi dibangun nih.
       <br>
-      Tunggu 1 Juni ya :3
+      Nanti dikabarin lagi ya :3
     </div>
     <SupportedBy />
   </div>
