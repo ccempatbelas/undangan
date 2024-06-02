@@ -45,7 +45,7 @@
 
 {#if pass == 'masuk'}
   <script lang="ts">
-    localStorage.setItem('pass', 'gibpei');
+    localStorage.setItem('pass', 'masuk');
   </script>
   <div class="flex min-h-screen flex-col">
     <TabGroup justify="justify-center" active="variant-filled">
