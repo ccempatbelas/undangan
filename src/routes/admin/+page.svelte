@@ -187,18 +187,21 @@
       <input
         class="input variant-glass"
         type="text"
+        id="nickname"
         placeholder="Nick Name"
         bind:value={$addForm.nickName}
       />
       <input
         class="input variant-glass"
         type="text"
+        id="phonenumber"
         placeholder="Phone Number"
         bind:value={$addForm.phoneNumber}
       />
       <input
         class="input variant-glass"
         type="search"
+        id="groupnmae"
         placeholder="Group Name"
         bind:value={$addForm.group}
         use:popup={{
