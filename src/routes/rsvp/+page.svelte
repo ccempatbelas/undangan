@@ -1,25 +1,72 @@
 <script lang="ts">
-  import Section from '@/lib/components/layouts/Section.svelte';
-  import NavBar from '@/lib/components/NavBar.svelte';
-  import SupportedBy from '@/lib/components/SupportedBy.svelte';
   import PageHeader from '@/lib/components/PageHeader.svelte';
+  import SupportedBy from '@/lib/components/SupportedBy.svelte';
+  import Center from '@/lib/components/layouts/Center.svelte';
+  import { cover } from '@/lib/stores';
+  import type { PopupSettings } from '@skeletonlabs/skeleton';
+  import { popup } from '@skeletonlabs/skeleton';
+  import { HelpCircle, Loader2 } from 'lucide-svelte';
+  import { onMount } from 'svelte';
+
+  let clicked = false;
+  let code = '';
+  onMount(() => {
+    const cachedCode = localStorage.getItem('code');
+    if (cachedCode != null) {
+      code = cachedCode;
+    }
+  });
+
+  const popupHover: PopupSettings = {
+    event: 'hover',
+    target: 'popupHover',
+    placement: 'top'
+  };
 </script>
 
-<svelte:head>
-  <title>CC14 10 tahun</title>
-  <meta name="the description" content="Svelte demo app" />
-</svelte:head>
-
-<!-- For Eager loading -->
-<div class="relative flex justify-center overflow-hidden">
-  <div class="max-w-5xl">
-    <PageHeader />
-    <div class="h4 text-secondary-500" style="margin-top: 200px;margin-bottom:200px;text-align:center;">
-      Halaman ini lagi dibangun nih.
-      <br>
-      Nanti dikabarin lagi ya :3
+<Center>
+  <PageHeader />
+  <form
+    action="rsvp/{code}"
+    class="neu card variant-glass m-2 p-4"
+    on:submit={() => {
+      if (code) {
+        clicked = true;
+        $cover = true;
+      }
+    }}
+  >
+    <h2 class="h2 card-header mb-7 text-center">CC 10 Years</h2>
+    <div class="flex gap-4">
+      <label class="label">
+        <div class="flex items-baseline">
+          <span class="mr-2">Enter Invitation Code</span>
+          <button type="button" class="[&>*]:pointer-events-none" use:popup={popupHover}>
+            <HelpCircle class="card-hover" size={15} strokeWidth={1} />
+          </button>
+          <div class="card variant-glass px-4 py-2" data-popup="popupHover">
+            <p>Get the code from your inviter</p>
+            <div class="variant-glass arrow" />
+          </div>
+        </div>
+        <input class="input variant-glass" type="text" placeholder="Code" bind:value={code} />
+      </label>
+      <button type="submit" class="variant-filled btn bg-primary-500" disabled={clicked}>
+        {#if clicked}
+          <Loader2 class="animate-spin" />
+        {:else}
+          Enter
+        {/if}
+      </button>
     </div>
-    <SupportedBy />
-  </div>
-</div>
-<NavBar />
+  </form>
+  <SupportedBy />
+</Center>
+
+<style>
+  .neu {
+    box-shadow:
+      20px 20px 40px #104079,
+      -20px -20px 40px #d66b05;
+  }
+</style>
