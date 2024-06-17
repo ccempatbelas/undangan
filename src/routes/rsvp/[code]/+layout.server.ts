@@ -14,11 +14,8 @@ export const load: LayoutServerLoad = async ({ params }) => {
     }
   });
 
-  const registry = await db.query.registry.findMany();
-
   if (!guest) throw error(404, { message: `guest with code ${params.code} not found` });
-
   const form = await superValidate(guest, mainGuestBaseSchema);
 
-  return { guest: form, registry };
+  return { guest: form };
 };
