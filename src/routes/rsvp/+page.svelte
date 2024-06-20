@@ -2,6 +2,7 @@
   import PageHeader from '@/lib/components/PageHeader.svelte';
   import SupportedBy from '@/lib/components/SupportedBy.svelte';
   import Center from '@/lib/components/layouts/Center.svelte';
+  import NavBar from '@/lib/components/NavBar.svelte';
   import { cover } from '@/lib/stores';
   import type { PopupSettings } from '@skeletonlabs/skeleton';
   import { popup } from '@skeletonlabs/skeleton';
@@ -63,6 +64,7 @@
   <SupportedBy />
 </Center>
 
+<NavBar />
 <style>
   .neu {
     box-shadow:
@@ -70,3 +72,4 @@
       -20px -20px 40px #d66b05;
   }
 </style>
+
