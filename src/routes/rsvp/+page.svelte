@@ -28,7 +28,7 @@
 <Center>
   <PageHeader />
   <form
-    action="rsvp/{code}"
+    action="/rsvp/{code}"
     class="neu card variant-glass m-2 p-4"
     on:submit={() => {
       if (code) {
