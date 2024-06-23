@@ -24,7 +24,7 @@
 </script>
 
 <div class="relative grid min-h-screen place-items-center">
-  <a href="/{$guest.id}" class="btn absolute left-0 top-0 flex gap-2"><ArrowBigLeft />Home</a>
+  <a href="/" class="btn absolute left-0 top-0 flex gap-2"><ArrowBigLeft />Home</a>
   <form class="prose mt-10 p-5 dark:prose-invert" method="POST" action="?/submit" use:enhance>
     <h1 class="gradient-heading h1 from-primary-300 via-primary-200 to-primary-100 pb-4">
       Hello {$guest.nickName}
