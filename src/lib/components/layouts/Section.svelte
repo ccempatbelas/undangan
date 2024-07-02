@@ -12,7 +12,7 @@
         <div class="absolute left-0 md:scale-150">
           <slot name="logo" />
         </div>
-        <h1 class="gradient-heading h1 from-primary-500 via-primary-400 to-primary-500">{title}</h1>
+        <!--h1 class="gradient-heading h1 from-primary-500 via-primary-400 to-primary-500">{title}</h1>-->
       </div>
     </div>
     <slot />

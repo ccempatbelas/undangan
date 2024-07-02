@@ -61,6 +61,14 @@
   }
 </script>
 
+<style>
+.card-border {
+border-image: linear-gradient(117deg, #ffb36b, #6d87de) 30;
+border-width: 5px;
+border-style: solid;
+}
+</style>
+
 <svelte:head>
   <title>CC14 10 tahun</title>
   <meta name="the description" content="Svelte demo app" />
@@ -71,16 +79,79 @@
   <div class="max-w-5xl">
 
     <PageHeader />
-    <div class="gradient-heading mt-4 flex flex-col items-center gap-8 from-primary-400 via-primary-200 to-primary-100 pt-4">
-      <h2 class="h4 text-secondary-500">Mari ngumpul bareng lagiiii</h2>
-    </div>
+    <Section id="schedule" title="Makan Malam Santai">
+      <div class="gradient-heading mt-4  justify-center flex flex-col items-center gap-8 from-primary-400 via-primary-200 to-primary-100 pt-4">
+        <h4 class="h4 text-primary-500">Ketemuan lagi yuk!</h4>
+      </div>
+      <div class="mb-10 mt-10  px-6 text-center flex justify-center object-none object-bottom">
+        <div class="variant-glass flex items-center justify-center">
+          <img
+            class="max-h-full w-full max-w-xl rounded-md object-cover"
+            src="/images/0.jpg"
+            alt="meet gif"
+          />
+        </div>
+      </div>
+      <div class="mt-4 mb-4 justify-center flex flex-col items-center from-primary-400 via-primary-200 to-primary-100 pt-4 variant-ghost-surface card-border">
+        <p class="h4 text-secondary-600">
+          Dengan konsep House Party, mengutamakan <b>ngobrol</b> dan <b>hangout</b> sembari <b>main-main.</b>
+          Makan malamnya <b>buffet</b> dan ada <b>Beer</b>.<br>
+        </p>
+        <p class="h4 text-primary-600">
+          Boleh bawa makanan dan minuman <b>sendiri</b> ya termasuk <b>alkohol ;)</b>
+        </p>
+      </div>
+     </Section>
+
+
+    <Section id="schedule" title="Makan Malam Santai">
+      <h1 class="h1 mb-4 mt-12">Sabtu, 27 Juli 2024</h1>
+      <div class="flex opacity-0" use:inview={animOptions} class:animRight={true}>
+        <div class="relative mr-4 basis-3/5 text-right xs:basis-1/2">
+          <p>
+            <span class="h2 text-primary-600">18:00 - 22:00</span>
+          </p>
+          <h3 class="h3 mt-4 text-secondary-600">Loca House</h3>
+          <p>Jl. Cemp. Putih Tengah I No.2A, Jakarta Pusat</p>
+          <a
+            class="variant-ringed-primary absolute bottom-0 right-0 flex items-center gap-2 rounded-md px-2"
+            target="_blank"
+            href="https://calendar.google.com/calendar/u/0?cid=65bee9fe831bb8bdbc11839da5dc815951be49557eacbeaca6973d54f8674dc5%40group.calendar.google.com"
+          >
+            <CalendarPlus size="16" />
+            add calendar</a
+          >
+        </div>
+        <div class="flex basis-2/5 flex-col justify-center xs:basis-1/2">
+          <div class="relative h-max">
+            <div
+              class="variant-glass absolute flex h-full w-full animate-pulse items-center justify-center"
+            >
+              Loading map...
+            </div>
+            <div class="h-52 w-full md:h-80">
+              <iframe
+                src="https://www.google.com/maps/embed/v1/place?q=Loca+House,+Jalan+Cempaka+Putih+Tengah+I,+RT.6/RW.5,+East+Cempaka+Putih,+Central+Jakarta+City,+Jakarta,+Indonesia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
+                class="h-full w-full"
+                title="Map"
+                style="border:0;filter: grayscale(70%) invert(87%)"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div></Section
+    >
+
+
     <Section id="gallery" title="" class="mb-12">
       <div class="mb-10 mt-10 flex justify-center object-none object-bottom">
         <div class="variant-glass flex items-center justify-center">
           <img
             class="aspect-square max-h-full w-full max-w-xl rounded-md object-cover"
-            src="/images/0.jpg"
-            alt="meet gif"
+            src="/images/marcho novaldo.jpg"
+            alt="in memoriam marcho novaldo"
           />
         </div>
       </div>
@@ -122,47 +193,7 @@
         </button>
       </div>
     </Section>
-
-    <Section id="schedule" title="Makan Malam Santai">
-      <h1 class="h1 mb-4 mt-12">Sabtu, 27 Juli 2024</h1>
-      <div class="flex opacity-0" use:inview={animOptions} class:animRight={true}>
-        <div class="relative mr-4 basis-3/5 text-right xs:basis-1/2">
-          <p>
-            <span class="h2 text-primary-600">18:00</span>
-          </p>
-          <h3 class="h3 mt-4 text-secondary-600">Loca House</h3>
-          <p>Jl. Cemp. Putih Tengah I No.2A, Jakarta Pusat</p>
-          <a
-            class="variant-ringed-primary absolute bottom-0 right-0 flex items-center gap-2 rounded-md px-2"
-            target="_blank"
-            href="https://calendar.google.com/calendar/u/0?cid=65bee9fe831bb8bdbc11839da5dc815951be49557eacbeaca6973d54f8674dc5%40group.calendar.google.com"
-          >
-            <CalendarPlus size="16" />
-            add calendar</a
-          >
-        </div>
-        <div class="flex basis-2/5 flex-col justify-center xs:basis-1/2">
-          <div class="relative h-max">
-            <div
-              class="variant-glass absolute flex h-full w-full animate-pulse items-center justify-center"
-            >
-              Loading map...
-            </div>
-            <div class="h-52 w-full md:h-80">
-              <iframe
-                src="https://www.google.com/maps/embed/v1/place?q=Loca+House,+Jalan+Cempaka+Putih+Tengah+I,+RT.6/RW.5,+East+Cempaka+Putih,+Central+Jakarta+City,+Jakarta,+Indonesia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-                class="h-full w-full"
-                title="Map"
-                style="border:0;filter: grayscale(70%) invert(87%)"
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-          </div>
-        </div>
-      </div></Section
-    >
-
+    
     <Section id="rsvp" title=" Mari menjadi Backers" class="mb-64">
       <div class="mt-8 flex justify-center object-none object-bottom">
         <p>Benefit yang didapatkan jika menjadi backers.</p>
