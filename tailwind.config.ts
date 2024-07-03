@@ -123,7 +123,9 @@ const config = {
       },
       fontFamily: {
         glester: ['Glester', ...defaultTheme.fontFamily.serif],
-        alice: ['Alice', ...defaultTheme.fontFamily.serif]
+        alice: ['Alice', ...defaultTheme.fontFamily.serif],
+        headlinecrack: ['HeadlineCrack', ...defaultTheme.fontFamily.serif],
+        mrheadline: ['mrheadline', ...defaultTheme.fontFamily.serif]
       },
       textShadow: {
         sm: '0 1px 2px var(--tw-shadow-color)',

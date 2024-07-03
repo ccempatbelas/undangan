@@ -1,6 +1,6 @@
-<a href="/backers" class="mb-10 flex justify-center text-center" style="bottom:30px;position:relative">
-  <div class="text-sm">
-    <div class="mb-2 text-secondary-400">supported by</div>
+<a href="/backers" class="mb-10 mt-20 flex justify-center text-center" style="bottom:30px;position:relative">
+  <div>
+    <div class="h4 font-headlinecrack mb-2 text-primary-900">supported by</div>
     <div class="center">
      <img
        src="/images/logo-smol/logo-smol-colony-tackle.jpg"

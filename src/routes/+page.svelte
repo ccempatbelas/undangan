@@ -67,6 +67,9 @@ border-image: linear-gradient(117deg, #ffb36b, #6d87de) 30;
 border-width: 5px;
 border-style: solid;
 }
+.headline {
+font-size: 50px;
+}
 </style>
 
 <svelte:head>
@@ -80,7 +83,9 @@ border-style: solid;
 
     <PageHeader />
     <Section id="schedule" title="Makan Malam Santai">
-      <div class="gradient-heading mt-4  justify-center flex flex-col items-center gap-8 from-primary-400 via-primary-200 to-primary-100 pt-4">
+      <div class="gradient-heading mt-4 justify-center flex flex-col items-center gap-8 from-primary-400 via-primary-200 to-primary-100 pt-4">
+        <p class="font-mrheadline headline text-primary-500">CC<span class="font-mrheadline headline text-secondary-500">14</span>
+        REUNION</p>
         <h4 class="h4 text-primary-500">Ketemuan lagi yuk!</h4>
       </div>
       <div class="mb-10 mt-10  px-6 text-center flex justify-center object-none object-bottom">
@@ -92,7 +97,8 @@ border-style: solid;
           />
         </div>
       </div>
-     </Section>
+      <SupportedBy />
+    </Section>
 
 
     <Section id="schedule" title="Makan Malam Santai">
