@@ -16,6 +16,8 @@
     <PageHeader />
 
     <Section id="rsvp" title="Mari menjadi Backers">
+      <div class="h3 font-headlinecrack mb-2 text-primary-900">Acara ini sudah <span class="text-secondary-500">fully-funded</span></div>
+      <p class="h4 mb-2 text-primary-800">Masih menerima dukungan, dana akan masuk ke kas angkatan.</p>
       <div class="mt-16">
         <p class="text-center">
           Mau jadi backers? Contact <a

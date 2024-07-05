@@ -16,6 +16,8 @@
     <PageHeader />
 
     <Section id="rsvp" title="This event is supported by" class="h4 text-secondary-500">
+      <div class="h3 font-headlinecrack mb-2 text-primary-900">Acara ini <span class="text-secondary-500">gratis</span> berkat dukungan teman2</div>
+      <p class="h4 mb-2 text-primary-800">show some love untuk mereka :3</p>
       <div class="mb-64 mt-8 flex justify-center object-none object-bottom">
         <div class="flex max-h-full w-full max-w-lg flex-col justify-center gap-4" style="font-size: {14 + 'px'}">
           <BackersCard

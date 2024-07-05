@@ -58,6 +58,12 @@ font-size: 50px;
       </p>
       <div class="mt-4 mb-4 justify-center flex flex-col items-center from-primary-400 via-primary-200 to-primary-100 pt-4 variant-ghost-surface card-border">
         <p class="h4 text-secondary-600">
+          Acara ini <b>GRATIS!</b> Berkat <span class="text-primary-800 underline"><a
+            href="/become-backers"
+            target="_blank"
+            rel="noopener noreferrer"
+          >backers</a></span>
+          <br><br>
           Dengan konsep House Party, mengutamakan <b>ngobrol</b> dan <b>hangout</b> sembari <b>main santai</b>.
           <br><b>Buffet</b> dinner dan ada <b>Beer</b>.<br>
         </p>
@@ -118,7 +124,7 @@ font-size: 50px;
       {#if $guest.attendingReception}
         <p>
           You have <span class="font-bold text-green-800">sucessfully</span> reserve your spot to CC14
-          reunion
+          reunion. See you :3
         </p>
       {:else}
         <p>
@@ -141,7 +147,7 @@ font-size: 50px;
       </p>
     {:else}
       <!-- Welcome Note -->
-      <p>Yuk reuni 27 July 2024!</p>
+      <p>Yuk reuni 27 Juli 2024!</p>
 
       <!-- Main Input -->
       <div class="flex flex-wrap gap-x-4 sm:flex-nowrap">

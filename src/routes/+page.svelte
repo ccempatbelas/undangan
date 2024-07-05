@@ -109,6 +109,12 @@ font-size: 50px;
       </p>
       <div class="mt-4 mb-4 justify-center flex flex-col items-center from-primary-400 via-primary-200 to-primary-100 pt-4 variant-ghost-surface card-border">
         <p class="h4 text-secondary-600">
+          Acara ini <b>GRATIS!</b> Berkat <span class="text-primary-800 underline"><a
+            href="/become-backers"
+            target="_blank"
+            rel="noopener noreferrer"
+          >backers</a></span>
+          <br><br>
           Dengan konsep House Party, mengutamakan <b>ngobrol</b> dan <b>hangout</b> sembari <b>main santai</b>.
           <br><b>Buffet</b> dinner dan ada <b>Beer</b>.<br>
         </p>
@@ -210,6 +216,8 @@ font-size: 50px;
     </Section>
     
     <Section id="rsvp" title=" Mari menjadi Backers" class="mb-64">
+      <div class="h3 font-headlinecrack mb-2 text-primary-900">Acara ini sudah <span class="text-secondary-500">fully-funded</span></div>
+      <p class="h4 mb-2 text-primary-800">Masih menerima dukungan, dana akan masuk ke kas angkatan.</p>
       <div class="mt-8 flex justify-center object-none object-bottom">
         <p>Benefit yang didapatkan jika menjadi backers.</p>
       </div>
