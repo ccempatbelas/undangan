@@ -238,24 +238,6 @@ font-size: 50px;
         </p>
       </div>
     </Section>
-    <Section id="rsvp" title="Nanti absen disini">
-      <div
-        class="mb-64 mt-8 flex justify-center object-none object-bottom opacity-0"
-        use:inview={{ unobserveOnEnter: true }}
-        class:animFade={true}
-      >
-        <div class="flex max-h-full w-full max-w-lg flex-col justify-center gap-8">
-          <p class="text-center">Will be informed later.</p>
-          <div class="relative">
-            <div
-              class="gradient-heading animScale rounded-lg border border-primary-200 from-primary-500 to-primary-50 px-8 py-4 text-3xl shadow-primary-300 text-shadow-sm md:text-5xl"
-            >
-              RSVP belum buka
-            </div>
-          </div>
-        </div>
-      </div>
-    </Section>
     <SupportedBy />
   </div>
 </div>
