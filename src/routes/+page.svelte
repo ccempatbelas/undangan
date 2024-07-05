@@ -88,7 +88,7 @@ font-size: 50px;
         REUNION</p>
         <h4 class="h4 text-primary-500">Ketemuan lagi yuk!</h4>
       </div>
-      <div class="mb-10 mt-10  px-6 text-center flex justify-center object-none object-bottom">
+      <div class="mb-20 mt-10  px-6 text-center flex justify-center object-none object-bottom">
         <div class="variant-glass flex items-center justify-center">
           <img
             class="max-h-full w-full max-w-xl rounded-md object-cover"
@@ -103,12 +103,21 @@ font-size: 50px;
 
     <Section id="schedule" title="Makan Malam Santai">
       <h1 class="h1 mb-4 mt-12">Sabtu, 27 Juli 2024</h1>
+      <p>
+        <span class="h2 text-primary-600">18:00 - 22:30</span><br>
+        <span class="h3 text-primary-600">20:00 kita foto bareng</span>
+      </p>
+      <div class="mt-4 mb-4 justify-center flex flex-col items-center from-primary-400 via-primary-200 to-primary-100 pt-4 variant-ghost-surface card-border">
+        <p class="h4 text-secondary-600">
+          Dengan konsep House Party, mengutamakan <b>ngobrol</b> dan <b>hangout</b> sembari <b>main santai</b>.
+          <br><b>Buffet</b> dinner dan ada <b>Beer</b>.<br>
+        </p>
+        <p class="h4 text-primary-600">
+          Boleh bawa makanan dan minuman <b>sendiri</b> ya termasuk <b>alkohol ;)</b>
+        </p>
+      </div>
       <div class="flex opacity-0" use:inview={animOptions} class:animRight={true}>
         <div class="relative mr-4 basis-3/5 text-right xs:basis-1/2">
-          <p>
-            <span class="h2 text-primary-600">18:00 - 22:30</span><br>
-            <span class="h3 text-primary-600">20:00 kita foto bareng</span>
-          </p>
           <h3 class="h3 mt-4 text-secondary-600">Loca House</h3>
           <p>Jl. Cemp. Putih Tengah I No.2A, Jakarta Pusat</p>
           <a
@@ -147,15 +156,6 @@ font-size: 50px;
           src="/images/lokasi-acara.jpg"
           alt="lokasi-acara.jpg"
         />
-      </div>
-      <div class="mt-4 mb-4 justify-center flex flex-col items-center from-primary-400 via-primary-200 to-primary-100 pt-4 variant-ghost-surface card-border">
-        <p class="h4 text-secondary-600">
-          Dengan konsep House Party, mengutamakan <b>ngobrol</b> dan <b>hangout</b> sembari <b>main santai</b>.
-          <br><b>Buffet</b> dinner dan ada <b>Beer</b>.<br>
-        </p>
-        <p class="h4 text-primary-600">
-          Boleh bawa makanan dan minuman <b>sendiri</b> ya termasuk <b>alkohol ;)</b>
-        </p>
       </div>
     </Section>
 

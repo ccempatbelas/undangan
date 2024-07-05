@@ -37,7 +37,8 @@
       }
     }}
   >
-    <h2 class="h2 card-header mb-7 text-center">CC 10 Years</h2>
+    <h1 class="font-mrheadline h1 text-primary-500 mb-7 text-center">CC<span class="font-mrheadline headline text-secondary-500">14</span>
+    10 TAHUN</h1>
     <div class="flex gap-4">
       <label class="label">
         <div class="flex items-baseline">
