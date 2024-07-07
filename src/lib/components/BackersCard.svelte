@@ -21,5 +21,5 @@ border-style: solid;
   <div class="relative border card-border">
     <img src="/images/logo-backers/{image}.jpg" alt="{image}" />
   </div>
-  <div><span>{desc}</span></div>
+  <div><span class="text-surface-900"><b>{desc}</b></span></div>
 </a>

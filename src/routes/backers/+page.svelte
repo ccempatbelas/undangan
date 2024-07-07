@@ -26,6 +26,11 @@
             desc="Distributor Fishing Hook | Adhe"
           />
           <BackersCard
+            url="https://www.scadalogistics.com"
+            image="logo-scada-logistics"
+            desc="Ekspor dan Impor | Rasyid Rasyad"
+          />
+          <BackersCard
             url="https://linktr.ee/DuniaAuto"
             image="logo-duniaauto"
             desc="Aksesoris mobil, emblem, stiker, dll. | Reinard"
@@ -51,9 +56,19 @@
             desc="Cafe, Resto, Catering, Private Event | Yosta"
           />
           <BackersCard
+            url="https://www.instagram.com/olajuiceindonesia"
+            image="logo-ola"
+            desc="Pure coldpressed juice | Him"
+          />
+          <BackersCard
             url="https://www.vidio.com/categories/movies"
             image="logo-dl"
-            desc="Nonton apa aja di Vidio | DL"
+            desc="Nonton OLIMPIADE di Vidio | DL"
+          />
+          <BackersCard
+            url="https://www.kanisius14.cc/backers"
+            image="logo-dll"
+            desc="Terima kasih atas dukungannya"
           />
         </div>
       </div>
