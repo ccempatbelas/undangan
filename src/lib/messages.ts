@@ -1,42 +1,34 @@
-export const invite = `
-Kepada Yth, 
-{{name}},
+export const invite = `Halo {{name}},
 
-Kami mengundang Bapak/Ibu untuk menghadiri acara pernikahan dari:
-Nikolas Kurnia Setiawan & Michely Arista Tenardi
+Datang ya ke *Acara Reuni CC14 10 tahun*!!
 
-Putra dan Putri dari:
-Bapak Suwardi Setiawan & Ibu Mieke Sudirgio
-beserta
-Bapak Pinarwan Tenardi & Ibu Yuliyati Tjokrowinata
-
-Holy Matrimony
-Hari/Tanggal : Sabtu, 30 Desember 2023
-Jam                : 12.00 WIB
-Tempat          : Kapel Santa Ursula
-Jl. Pos no. 2, Pasar Baru, Kecamatan Sawah Besar, Jakarta Pusat.
+1. *Dinner House Party*
+Hari/Tanggal : *Sabtu, 27 Juli 2024*
+Jam                : *18.00 - 22.30*. Jam 8 Foto!!
+Tempat          : Loca House
+Jl. Cemp. Putih Tengah I No.2A, Jakarta Pusat.
 {{reception}}
-Tanpa mengurangi rasa hormat, mohon konfirmasi kehadiran Bapak/Ibu sebelum tanggal 25 Desember 2023 melalui link ini:
-https://its.nikolasmichely.day/{{id}}, dengan {{id}} sebagai kode unik anda
+Tolong RSVP, terakhir *20 Juli 2024* yaaaa
+langsung ke https://kanisius14.cc/rsvp/{{id}}
+atau input kode unik {{id}} di website.
 
-Apabila ada pertanyaan, silahkan menghubungi nomor ini wa.me/+6287777438727. 
+Berkat bantuan dana teman2, acara ini *GRATIS*
 
-Terima kasih
-`;
+2. Kita mau update data nih, sekalian bikin *yearbook edisi 10 tahun*!
+https://forms.gle/nBNAMbRc6MrBQqmU9
+Tolong isi ya, terakhir *14 Juli 2024*
+Karena pengen diprint beberapa untuk acara nanti~
 
-export const reception = `
-Intimate Dinner Reception
-Hari/Tanggal : Sabtu, 30 Desember 2023
-Jam                : 18.30 WIB
-Tempat          : Hotel Park Hyatt Jakarta - The Observatory at Level 36
-Jl. Kebon Sirih No.17-19, Menteng, Jakarta Pusat. 
-`;
+
+Apabila ada pertanyaan, silahkan menghubungi nomor ini wa.me/+628999966385 (DL).`;
+
+export const reception = ``;
 
 export const remind = `
-H-1 hingga pernikahan Nikolas dan Michely!
+H-1 Acara Reuni CC14!
 
-Jangan lupa untuk menunjukan QR code Bapak/Ibu kepada petugas check in melalui link ini:
-https://its.nikolasmichely.day/{{id}}/rsvp
+Kalau belum RSVP gpp, langsung datang aja guys.
+Tidak dipungut biaya apapun~
 `;
 
 export const email = `
