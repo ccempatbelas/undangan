@@ -504,7 +504,7 @@
             <td>
               {#if !guest.reserved}
                 <a
-                  href="/{guest.id}/rsvp"
+                  href="/rsvp/{guest.id}"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="variant-soft-error btn">Not Reserved</a

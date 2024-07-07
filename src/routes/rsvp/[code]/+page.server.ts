@@ -12,6 +12,7 @@ export const actions: Actions = {
     const form = await superValidate(request, mainGuestRsvpSchema);
 
     if (!form.valid) {
+      console.log(form);
       return fail(400, { form });
     }
 
