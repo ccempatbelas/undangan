@@ -5,7 +5,13 @@
      <img
        src="/images/logo-smol/logo-smol-colony-tackle.jpg"
        alt="logo-smol-colony-tackle.jpg"
-       style="width:100px;"
+       style="height:100px;"
+       class="inline-flex"
+     />
+     <img
+       src="/images/logo-smol/logo-smol-scada-logistics.jpg"
+       alt="logo-smol-scada-logistics.jpg"
+       style="height:100px;"
        class="inline-flex"
      />
     </div>
@@ -31,6 +37,12 @@
       <img
         src="/images/logo-smol/logo-smol-seknet.jpg"
         alt="logo-seknet.jpg"
+        style="width:50px;"
+        class="inline-flex"
+      />
+      <img
+        src="/images/logo-smol/logo-smol-ola.jpg"
+        alt="logo-smol-ola.jpg"
         style="width:50px;"
         class="inline-flex"
       />
