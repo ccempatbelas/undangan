@@ -127,6 +127,9 @@
       <p>
         Sudah ada <span class="font-bold text-secondary-500">{data.sum}</span> teman yang akan ikut.
       </p>
+      <p class="text-secondary-500">
+        Tolong isi <a class="text-primary-300 underline" target="_blank" href="https://forms.gle/nBNAMbRc6MrBQqmU9" rel="noopener noreferrer">Form</a>
+         buat Yearbook edisi 10 tahun ya.</p>
 
       <div class="flex justify-between">
         <a href="/" class="underline" data-sveltekit-preload-data="hover">Back To Home</a>
