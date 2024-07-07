@@ -111,7 +111,7 @@
 <div class="relative grid min-h-screen place-items-center">
   <form class="prose mb-20 mt-10 p-5 dark:prose-invert" method="POST" action="?/submit" use:enhance>
     <h1 class="gradient-heading h1 from-primary-400 via-primary-300 to-primary-400 pb-4">
-      Hello {$guest.nickName}
+      Hi {$guest.nickName}!
     </h1>
     {#if $guest.reserved}
       {#if $guest.attendingReception}
@@ -125,7 +125,7 @@
         </p>
       {/if}
 
-      <p>Sudah ada <span class="font-bold text-secondary-500">{data.sum}</span> alumni terdaftar</p>
+      <p>Sudah ada <span class="font-bold text-secondary-500">{data.sum}</span> teman yang akan ikut.</p>
 
       <div class="flex justify-between">
         <a href="/" class="underline" data-sveltekit-preload-data="hover">Back To Home</a>
@@ -148,12 +148,12 @@
       <!-- Main Input -->
       <div class="flex flex-wrap gap-x-4 sm:flex-nowrap">
         <label class="label w-full">
-          <h4 class="h4">Pesan & Saran</h4>
+          <h4 class="h4">Ada Request, Saran, Ide?</h4>
           <textarea
             class="textarea"
             rows="6"
             maxlength="1000"
-            placeholder="Masukan pesan dan saran anda di sini..."
+            placeholder="Masukkan request, saran, dan ide disini..."
             bind:value={$guest.wishes}
           ></textarea>
           <small class="flex justify-end">{$guest.wishes ? $guest.wishes.length : 0}/1000</small>
