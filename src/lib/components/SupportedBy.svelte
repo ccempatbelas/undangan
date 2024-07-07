@@ -1,7 +1,7 @@
 <a href="/backers" class="mb-10 flex justify-center text-center" style="bottom:30px;position:relative">
   <div>
     <div class="h4 font-headlinecrack mb-2 text-primary-900">supported by</div>
-    <div class="center">
+    <div class="center mt-1">
      <img
        src="/images/logo-smol/logo-smol-colony-tackle.jpg"
        alt="logo-smol-colony-tackle.jpg"
@@ -52,12 +52,9 @@
         style="width:50px;"
         class="inline-flex"
       />
-      <img
-        src="/images/logo-smol/logo-smol-dl.jpg"
-        alt="logo-smol-dl.jpg"
-        style="width:50px;"
-        class="inline-flex"
-      />
+    </div>
+    <div class="mt-1">
+      <span class="text-surface-700 text-sm  font-josefinsans">Hendra Ditto Deni Teja DL Popo</span>
     </div>
   </div>
 </a>
