@@ -11,11 +11,7 @@
   let modify = $page.url.searchParams.get('modify') ? true : false;
   let submited = false;
 
-  const {
-    form: guest,
-    errors,
-    enhance
-  } = superForm(data.guest, {
+  const { form: guest, enhance } = superForm(data.guest, {
     dataType: 'json',
     taintedMessage: null,
     onSubmit() {
@@ -128,6 +124,9 @@
           You have opted <span class="font-bold text-error-200">not to join</span> CC14 reunion
         </p>
       {/if}
+
+      <p>Sudah ada <span class="font-bold text-secondary-500">{data.sum}</span> alumni terdaftar</p>
+
       <div class="flex justify-between">
         <a href="/" class="underline" data-sveltekit-preload-data="hover">Back To Home</a>
         {#if modify}
