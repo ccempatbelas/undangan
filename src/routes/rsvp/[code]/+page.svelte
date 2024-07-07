@@ -27,9 +27,8 @@
   };
 </script>
 
-<a href="/" class="btn absolute left-0 top-0 flex gap-2"><ArrowBigLeft />Home</a>
-
 <div class="relative flex justify-center overflow-hidden">
+  <a href="/" class="btn absolute left-0 top-0 flex gap-2"><ArrowBigLeft />Home</a>
   <div class="max-w-5xl">
     <section class="dresscode-bg mt-24 text-center">
       <div
@@ -125,7 +124,9 @@
         </p>
       {/if}
 
-      <p>Sudah ada <span class="font-bold text-secondary-500">{data.sum}</span> teman yang akan ikut.</p>
+      <p>
+        Sudah ada <span class="font-bold text-secondary-500">{data.sum}</span> teman yang akan ikut.
+      </p>
 
       <div class="flex justify-between">
         <a href="/" class="underline" data-sveltekit-preload-data="hover">Back To Home</a>
