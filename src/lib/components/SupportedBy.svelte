@@ -54,7 +54,7 @@
       />
     </div>
     <div class="mt-1">
-      <span class="text-surface-700 text-sm  font-josefinsans">Hendra Ditto Deni Teja DL Popo</span>
+      <span class="text-surface-700 text-sm font-josefinsans">Adhe Rasyid Rasyad AM Bampi Wiltang Reinard Yosta Him Teja Popo DL Hendra Ditto Deni</span>
     </div>
   </div>
 </a>
