@@ -55,10 +55,7 @@ export const mainGuestRsvpSchema = mainGuestBaseSchema
     id: true
   })
   .extend({
-    fullName: z
-      .string({ invalid_type_error: 'Full name cannot be empty' })
-      .min(5, 'Name must contain at least 5 characters')
-      .default(''),
+    fullName: z.string({ invalid_type_error: 'Full name cannot be empty' }).default(''),
     phoneNumber: z
       .string({ invalid_type_error: 'Phone number cannot be empty' })
       .regex(phoneRegex, 'Invalid phone number format')
