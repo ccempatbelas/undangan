@@ -16,14 +16,7 @@
   );
 
   const rsvpedGuestCount = guests.reduce((sum: number, g: any) => {
-    if (g.reserved && (g.attendingHolyMat || g.attendingReception)) {
-      return sum + 1 + g.additionalGuests.length;
-    } else {
-      return sum;
-    }
-  }, 0);
-  const holmatGuestCount = guests.reduce((sum: number, g: any) => {
-    if (g.reserved && g.attendingHolyMat) {
+    if (g.reserved) {
       return sum + 1 + g.additionalGuests.length;
     } else {
       return sum;
