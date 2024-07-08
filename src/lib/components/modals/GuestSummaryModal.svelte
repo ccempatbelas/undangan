@@ -76,11 +76,7 @@
             <td>{rsvpedGuestCount}</td>
           </tr>
           <tr>
-            <th align="left" class="text-warning-500">Attending Holy Matrimony</th>
-            <td>{holmatGuestCount}</td>
-          </tr>
-          <tr>
-            <th align="left" class="text-warning-500">Attending Reception</th>
+            <th align="left" class="text-warning-500">Attending</th>
             <td>{receptionGuestCount}</td>
           </tr>
           <tr>
@@ -94,10 +90,6 @@
           <tr>
             <th align="left">Main Guest</th>
             <td>{mainGuestCount}</td>
-          </tr>
-          <tr>
-            <th align="left">Additional Guest</th>
-            <td>{additionalGuestCount}</td>
           </tr>
         </tbody>
       </table>
