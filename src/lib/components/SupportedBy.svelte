@@ -41,6 +41,12 @@
         class="inline-flex"
       />
       <img
+        src="/images/logo-smol/logo-smol-campdekatarina.jpg"
+        alt="logo-smol-ola.jpg"
+        style="width:50px;"
+        class="inline-flex"
+      />
+      <img
         src="/images/logo-smol/logo-smol-ola.jpg"
         alt="logo-smol-ola.jpg"
         style="width:50px;"
@@ -54,7 +60,7 @@
       />
     </div>
     <div class="mt-1">
-      <span class="text-surface-700 text-sm font-josefinsans">Adhe Rasyid Rasyad AM Bampi Wiltang Reinard Yosta Him Teja Popo DL Hendra Ditto Deni</span>
+      <span class="text-surface-700 text-sm font-josefinsans">Adhe Rasyid Rasyad AM Bampi Wiltang Reinard Yosta Him Teja Satriyo Popo DL Hendra Ditto Deni</span>
     </div>
   </div>
 </a>

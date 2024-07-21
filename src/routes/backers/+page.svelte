@@ -56,6 +56,11 @@
             desc="Cafe, Resto, Catering, Private Event | Yosta"
           />
           <BackersCard
+            url="https://www.instagram.com/campdekatarina"
+            image="logo-campdekatarina"
+            desc="Glamping and Villas | Satriyo"
+          />
+          <BackersCard
             url="https://www.instagram.com/olajuiceindonesia"
             image="logo-ola"
             desc="Pure coldpressed juice | Him"
